@@ -1,10 +1,41 @@
-<Hereminders.ReminderListViewViewCode; frame = (0 0; 0 0); layer = <CALayer>>
-   | <UIStackView; frame = (0 0; 0 0); layer = <CALayer>>
-   |    | <Hereminders.TitleSubtitleView; frame = (0 0; 0 36); layer = <CALayer>>
-   |    |    | <UIStackView; frame = (0 0; 0 36); layer = <CALayer>>
-   |    |    |    | <UILabel; frame = (0 0; 0 18); text = 'Nome do endereço'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+<Hereminders.ReminderListViewViewCode; frame = (0 0; 179.667 399); layer = <CALayer>>
+   | <UIStackView; frame = (0 0; 179.667 399); layer = <CALayer>>
+   |    | <Hereminders.TitleSubtitleView; frame = (0 0; 179.667 36); layer = <CALayer>>
+   |    |    | <UIStackView; frame = (0 0; 179.667 36); layer = <CALayer>>
+   |    |    |    | <UILabel; frame = (0 0; 179.667 18); text = 'Nome do endereço'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
    |    |    |    |    | <_UILabelContentLayer> (layer)
-   |    |    |    | <UILabel; frame = (0 18; 0 18); text = 'Rua Bela Cintra'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
-   |    | <Hereminders.ButtonView; frame = (0 -50; 0 50); layer = <CALayer>>
-   |    |    | <UIButton; frame = (0 0; 0 50); opaque = NO; layer = <CALayer>>
-   |    |    |    | <UIButtonLabel; frame = (0 14.6667; 0 21); text = 'testo do botao'; opaque = NO; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <UILabel; frame = (0 18; 179.667 18); text = 'Rua Bela Cintra dos Anjoi...'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    | <UITableView; frame = (0 51; 179.667 300); clipsToBounds = YES; gestureRecognizers = <NSArray>; layer = <CALayer>; contentOffset: {0, 0}; contentSize: {179.66666666666666, 132}; adjustedContentInset: {0, 0, 0, 0}; dataSource: <Hereminders.ReminderListViewViewCode; frame = (0 0; 179.667 399); layer = <CALayer>>>
+   |    |    | <UITableViewCell; frame = (0 88; 179.667 44); text = 'Deslgar as luzes'; autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UISystemBackgroundView; frame = (0 0; 179.667 44); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
+   |    |    |    |    | <UIView; frame = (0 0; 179.667 44); clipsToBounds = YES; layer = <CALayer>>
+   |    |    |    | <UITableViewCellContentView; frame = (0 0; 179.667 44); gestureRecognizers = <NSArray>; layer = <CALayer>>
+   |    |    |    |    | <UITableViewLabel; frame = (16 0; 147.667 44); text = 'Deslgar as luzes'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 43.6667; 163.667 0.333333); layer = <CALayer>>
+   |    |    | <UITableViewCell; frame = (0 44; 179.667 44); text = 'Jogar água na planta'; autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UISystemBackgroundView; frame = (0 0; 179.667 44); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
+   |    |    |    |    | <UIView; frame = (0 0; 179.667 44); clipsToBounds = YES; layer = <CALayer>>
+   |    |    |    | <UITableViewCellContentView; frame = (0 0; 179.667 44); gestureRecognizers = <NSArray>; layer = <CALayer>>
+   |    |    |    |    | <UITableViewLabel; frame = (16 0; 147.667 44); text = 'Jogar água na planta'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 43.6667; 163.667 0.333333); layer = <CALayer>>
+   |    |    | <UITableViewCell; frame = (0 0; 179.667 44); text = 'Tirar roupas do varal'; autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UISystemBackgroundView; frame = (0 0; 179.667 44); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
+   |    |    |    |    | <UIView; frame = (0 0; 179.667 44); clipsToBounds = YES; layer = <CALayer>>
+   |    |    |    | <UITableViewCellContentView; frame = (0 0; 179.667 44); gestureRecognizers = <NSArray>; layer = <CALayer>>
+   |    |    |    |    | <UITableViewLabel; frame = (16 0; 147.667 44); text = 'Tirar roupas do varal'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (16 43.6667; 163.667 0.333333); layer = <CALayer>>
+   |    |    | <_UITableViewCellSeparatorView; frame = (16 175.667; 163.667 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    | <_UITableViewCellSeparatorView; frame = (16 219.667; 163.667 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    | <_UITableViewCellSeparatorView; frame = (16 263.667; 163.667 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    | <_UITableViewCellSeparatorView; frame = (16 307.667; 163.667 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    | <_UITableViewCellSeparatorView; frame = (16 351.667; 163.667 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    | <_UITableViewCellSeparatorView; frame = (16 395.667; 163.667 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    | <_UITableViewCellSeparatorView; frame = (16 439.667; 163.667 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    | <_UITableViewCellSeparatorView; frame = (16 483.667; 163.667 0.333333); autoresize = W; layer = <CALayer>>
+   |    |    | <_UIScrollViewScrollIndicator; frame = (173.667 -39; 3 36); alpha = 0; autoresize = LM; layer = <CALayer>>
+   |    |    |    | <UIView; frame = (0 0; 3 36); layer = <CALayer>>
+   |    |    | <_UIScrollViewScrollIndicator; frame = (-39 294; 36 3); alpha = 0; autoresize = TM; layer = <CALayer>>
+   |    |    |    | <UIView; frame = (0 0; 36 3); layer = <CALayer>>
+   |    | <Hereminders.ButtonView; frame = (32 366; 116 33); layer = <CALayer>>
+   |    |    | <UIButton; frame = (0 0; 116 33); opaque = NO; layer = <CALayer>>
+   |    |    |    | <UIButtonLabel; frame = (0 6; 116 21); text = 'testo do botao'; opaque = NO; userInteractionEnabled = NO; layer = <_UILabelLayer>>
