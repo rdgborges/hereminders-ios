@@ -12,12 +12,22 @@ import XCTest
 
 class ReminderListViewViewCodeTests: XCTestCase {
   func testReminderListViewViewCode() throws {
-    let sut = ReminderListViewViewCode()
 
-    let snapshopSize = CGSize(width: 1125, height: 2436)
-    assertSnapshot(matching: sut, as: .image(size: snapshopSize), record: true)
-//    assertSnapshot(matching: sut, as: .image(), record: true)
+    let titleSubtitleVM: TitleSubtitleViewModel = TitleSubtitleViewModel(title: "Nome do endereço", subtitle: "Rua Bela Cinta dos Anjois, 1200")
+    let reminders: [ReminderItemModel] = [
+      ReminderItemModel(description: "Jogar água na planta", event: true),
+      ReminderItemModel(description: "Tirar roupas do varal", event: false),
+      ReminderItemModel(description: "Deslgar as luzes", event: true),
+    ]
+    let buttonVM = ButtonViewModel(titleButton: L10n.Reminderlist.addReminder)
 
-    assertSnapshot(matching: sut, as: .recursiveDescription, record: true)
+    let viewModel = ReminderListViewViewCodeViewModel(titleSubtitleViewModel: titleSubtitleVM,
+                                                      remindersViewModel: reminders,
+                                                      buttonViewModel: buttonVM)
+    let sut = ReminderListViewController(with: viewModel)
+
+    let snapshopSize = CGSize(width: 375, height: 600)
+    assertSnapshot(matching: sut, as: .image(size: snapshopSize), record: false)
+    assertSnapshot(matching: sut, as: .recursiveDescription, record: false)
   }
 }

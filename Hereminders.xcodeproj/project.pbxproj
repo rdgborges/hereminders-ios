@@ -104,6 +104,7 @@
 		98F1C98D2066E5B60008FF57 /* ReminderViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1C98C2066E5B60008FF57 /* ReminderViewController+TableViewDelegate.swift */; };
 		98F1C9912066E6EF0008FF57 /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1C98F2066E6EF0008FF57 /* SliderTableViewCell.swift */; };
 		98F1C9922066E6EF0008FF57 /* SliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F1C9902066E6EF0008FF57 /* SliderTableViewCell.xib */; };
+		B153FC2626DC182D00167B3E /* ReminderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B153FC2526DC182D00167B3E /* ReminderListViewController.swift */; };
 		B16C833C26D82C92006AAF7B /* ContributorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16C833A26D82C92006AAF7B /* ContributorTableViewCell.swift */; };
 		B16C833D26D82C92006AAF7B /* ContribuitorTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16C833B26D82C92006AAF7B /* ContribuitorTableViewCellViewModel.swift */; };
 		B16C833F26D83F21006AAF7B /* ReminderListViewViewCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16C833E26D83F21006AAF7B /* ReminderListViewViewCodeTests.swift */; };
@@ -112,6 +113,7 @@
 		B1C3EB3D26D15AB100EB214C /* CircularImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C3EB3C26D15AB100EB214C /* CircularImageViewTests.swift */; };
 		B1C3EB4526D15B1600EB214C /* CircularImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C3EB4326D15B1600EB214C /* CircularImageViewModel.swift */; };
 		B1C3EB4626D15B1600EB214C /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C3EB4426D15B1600EB214C /* CircularImageView.swift */; };
+		B1EC2EF426D9594E002ECD86 /* ReminderListViewViewCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC2EF326D9594E002ECD86 /* ReminderListViewViewCodeViewModel.swift */; };
 		B1F276EB26C40E0900996346 /* MKCoordinateSpanUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F276EA26C40E0900996346 /* MKCoordinateSpanUnitTests.swift */; };
 		BC51A83F26C471B60022780E /* UITableViewCellUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */; };
 		BC847BA026D5420D00373A49 /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC847B9F26D5420D00373A49 /* ViewProtocol.swift */; };
@@ -280,6 +282,7 @@
 		98F1C98C2066E5B60008FF57 /* ReminderViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
 		98F1C98F2066E6EF0008FF57 /* SliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTableViewCell.swift; sourceTree = "<group>"; };
 		98F1C9902066E6EF0008FF57 /* SliderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderTableViewCell.xib; sourceTree = "<group>"; };
+		B153FC2526DC182D00167B3E /* ReminderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListViewController.swift; sourceTree = "<group>"; };
 		B16C833A26D82C92006AAF7B /* ContributorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContributorTableViewCell.swift; sourceTree = "<group>"; };
 		B16C833B26D82C92006AAF7B /* ContribuitorTableViewCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContribuitorTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		B16C833E26D83F21006AAF7B /* ReminderListViewViewCodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderListViewViewCodeTests.swift; sourceTree = "<group>"; };
@@ -288,6 +291,7 @@
 		B1C3EB3C26D15AB100EB214C /* CircularImageViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageViewTests.swift; sourceTree = "<group>"; };
 		B1C3EB4326D15B1600EB214C /* CircularImageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageViewModel.swift; sourceTree = "<group>"; };
 		B1C3EB4426D15B1600EB214C /* CircularImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
+		B1EC2EF326D9594E002ECD86 /* ReminderListViewViewCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListViewViewCodeViewModel.swift; sourceTree = "<group>"; };
 		B1F276EA26C40E0900996346 /* MKCoordinateSpanUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateSpanUnitTests.swift; sourceTree = "<group>"; };
 		BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellUnitTests.swift; sourceTree = "<group>"; };
 		BC847B9F26D5420D00373A49 /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
@@ -556,12 +560,12 @@
 		988E0B3326CB24EF008BBBCF /* SnapshotTests */ = {
 			isa = PBXGroup;
 			children = (
-				B16C833E26D83F21006AAF7B /* ReminderListViewViewCodeTests.swift */,
 				EDAA813926D44B8B00816933 /* ButtonViewSnapshotTests.swift */,
-				13DB8EFC26D42AF000CB86EA /* DividerViewSnapshotTests.swift */,
-				DEBEC9D526D3E4CA00D92DB5 /* MapLocationViewSnapshotTests.swift */,
 				B1C3EB3C26D15AB100EB214C /* CircularImageViewTests.swift */,
+				13DB8EFC26D42AF000CB86EA /* DividerViewSnapshotTests.swift */,
 				988E0B3426CB2509008BBBCF /* EmptyViewSnapshotTests.swift */,
+				DEBEC9D526D3E4CA00D92DB5 /* MapLocationViewSnapshotTests.swift */,
+				B16C833E26D83F21006AAF7B /* ReminderListViewViewCodeTests.swift */,
 				BCC5A10E26D0244300A7F3B4 /* SegmentedControlViewTests.swift */,
 				BCA85B4426CFF54F005D6843 /* TitleSubtitleSnapshotTests.swift */,
 			);
@@ -784,6 +788,8 @@
 			isa = PBXGroup;
 			children = (
 				B16C834126D83F41006AAF7B /* ReminderListViewViewCode.swift */,
+				B1EC2EF326D9594E002ECD86 /* ReminderListViewViewCodeViewModel.swift */,
+				B153FC2526DC182D00167B3E /* ReminderListViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1158,10 +1164,12 @@
 				9897153420F2D16400F976FE /* PlaceListViewModel.swift in Sources */,
 				98DD30812068203300AA7E75 /* Reminder.swift in Sources */,
 				B1C3EB4626D15B1600EB214C /* CircularImageView.swift in Sources */,
+				B1EC2EF426D9594E002ECD86 /* ReminderListViewViewCodeViewModel.swift in Sources */,
 				9871B41421447DEF0050C651 /* ReminderDataController.swift in Sources */,
 				9804F6EA2066DBB400820153 /* UIViewController+Extensions.swift in Sources */,
 				98D02AC820673F0700E8BC91 /* SegmentedControlTableViewCell.swift in Sources */,
 				EDAA814426D44BBC00816933 /* ButtonView.swift in Sources */,
+				B153FC2626DC182D00167B3E /* ReminderListViewController.swift in Sources */,
 				B16C833D26D82C92006AAF7B /* ContribuitorTableViewCellViewModel.swift in Sources */,
 				989BAB0720F41BC300C82DF7 /* UIColor+Extensions.swift in Sources */,
 				98DCD2C020E82BD500A49897 /* MKPlacemark+Extensions.swift in Sources */,

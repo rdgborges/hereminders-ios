@@ -23,10 +23,11 @@ struct LembreteVM {
 class ReminderListViewViewCode: UIView {
   // MARK: Lifecycle
 
-  init() {
+  init(with viewModel: ReminderListViewViewCodeViewModel) {
+    self.viewModel = viewModel
     super.init(frame: .zero)
+
     backgroundColor = .white
-    configure()
     configureSubviews()
     configureConstraints()
   }
@@ -35,24 +36,7 @@ class ReminderListViewViewCode: UIView {
     fatalError("init(coder:) has not been implemented")
   }
 
-  // MARK: Internal
-
-  let lembretes = [
-    LembreteVM(descricao: "Tirar roupas do varal", horario: "Ao chegar"),
-    LembreteVM(descricao: "Jogar água na planta", horario: "Quando anoitecer"),
-    LembreteVM(descricao: "Deslgar as luzes", horario: "Quando amanhecer"),
-  ]
-
   // TODO: Criar viewModel da classe englobando os VMs abaixo
-  func configure() {
-
-
-    let titleVM = TitleSubtitleViewModel(title: "Nome do endereço", subtitle: "Rua Bela Cintra dos Anjois")
-    titleSubtitle.configure(with: titleVM)
-
-    let buttonVM = ButtonViewModel(titleButton: "teste do botao")
-    buttonView.configure(with: buttonVM)
-  }
 
   // MARK: Private
 
@@ -61,21 +45,25 @@ class ReminderListViewViewCode: UIView {
     stackView.translatesAutoresizingMaskIntoConstraints = false
     stackView.axis = .vertical
     stackView.distribution = .fill
-    stackView.alignment = .center
-    stackView.spacing = 15
+    let marginEdge: CGFloat = 16
+    stackView.isLayoutMarginsRelativeArrangement = true
+    stackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: marginEdge,
+                                                                 leading: marginEdge,
+                                                                 bottom: marginEdge,
+                                                                 trailing: marginEdge)
     return stackView
   }()
 
   private lazy var titleSubtitle: TitleSubtitleView = {
     let label = TitleSubtitleView()
     label.translatesAutoresizingMaskIntoConstraints = false
+    label.configure(with: viewModel.titleSubtitleViewModel)
     return label
   }()
 
-  private lazy var buttonView: ButtonView = {
-    let button = ButtonView()
-    button.translatesAutoresizingMaskIntoConstraints = false
-    return button
+  private var dividerView: DividerView = {
+    let divider = DividerView()
+    return divider
   }()
 
   private lazy var reminderTableView: UITableView = {
@@ -84,14 +72,23 @@ class ReminderListViewViewCode: UIView {
     tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.classIdentifier())
     tableView.delegate = self
     tableView.dataSource = self
-
     return tableView
   }()
 
+  private lazy var buttonView: ButtonView = {
+    let button = ButtonView()
+    button.translatesAutoresizingMaskIntoConstraints = false
+    button.configure(with: viewModel.buttonViewModel)
+    return button
+  }()
+
+  private var viewModel: ReminderListViewViewCodeViewModel
+
   private func configureSubviews() {
-    translatesAutoresizingMaskIntoConstraints = false
+//    translatesAutoresizingMaskIntoConstraints = false
     addSubview(stackView)
     stackView.addArrangedSubview(titleSubtitle)
+    stackView.addArrangedSubview(dividerView)
     stackView.addArrangedSubview(reminderTableView)
     stackView.addArrangedSubview(buttonView)
   }
@@ -102,18 +99,12 @@ class ReminderListViewViewCode: UIView {
       stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
       stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
       stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
-//      stackView.heightAnchor.constraint(equalToConstant: 420),
 
-//      titleSubtitle.heightAnchor.constraint(equalToConstant: 80),
+      titleSubtitle.heightAnchor.constraint(equalToConstant: 56),
 
-//      reminderTableView.topAnchor.constraint(equalTo: stackView.topAnchor, constant: 25),
-//      reminderTableView.leadingAnchor.constraint(equalTo: stackView.leadingAnchor),
-//      reminderTableView.trailingAnchor.constraint(equalTo: stackView.trailingAnchor),
-//      reminderTableView.bottomAnchor.constraint(equalTo: stackView.bottomAnchor),
       reminderTableView.widthAnchor.constraint(equalTo: stackView.widthAnchor),
-      reminderTableView.heightAnchor.constraint(equalToConstant: 300),
-
-//      buttonView.heightAnchor.constraint(equalToConstant: 44),
+      
+      buttonView.heightAnchor.constraint(equalToConstant: 44),
     ])
   }
 }
@@ -122,7 +113,8 @@ class ReminderListViewViewCode: UIView {
 
 extension ReminderListViewViewCode: UITableViewDelegate {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    lembretes.count
+//    viewModel.reminders.count
+    viewModel.remindersViewModel.count
   }
 }
 
@@ -130,9 +122,9 @@ extension ReminderListViewViewCode: UITableViewDelegate {
 
 extension ReminderListViewViewCode: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let lembrete = lembretes[indexPath.row].descricao
+    let lembrete = viewModel.remindersViewModel[indexPath.row].description
     let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.classIdentifier(), for: indexPath)
-    cell.textLabel?.text = lembrete
+    cell.textLabel?.text = lembrete.description
     return cell
   }
 }
