@@ -24,7 +24,8 @@ class ReminderListViewViewCodeTests: XCTestCase {
     let viewModel = ReminderListViewViewCodeViewModel(titleSubtitleViewModel: titleSubtitleVM,
                                                       remindersViewModel: reminders,
                                                       buttonViewModel: buttonVM)
-    let sut = ReminderListViewController(with: viewModel)
+
+    let sut  = ReminderListViewViewCode(with: viewModel)
 
     let snapshopSize = CGSize(width: 375, height: 600)
     assertSnapshot(matching: sut, as: .image(size: snapshopSize), record: false)

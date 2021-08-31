@@ -7,16 +7,8 @@
 //
 
 // MARK: - Layout
-// https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F1c88407a-b729-4966-b89f-402d6d7207bd%2FScreen_Shot_2021-08-05_at_13.38.02.png?table=block&id=7c2b9194-3510-43c5-b27e-bd63e3157a28&spaceId=4055f95c-3cb2-49bd-af80-6342d6744fe5&width=2880&userId=f56d3b8f-5500-4291-96c0-08057c09216b&cache=v2
 
 import UIKit
-
-// MARK: - LembreteVM
-
-struct LembreteVM {
-  let descricao: String
-  let horario: String
-}
 
 // MARK: - ReminderListViewViewCode
 
@@ -45,13 +37,13 @@ class ReminderListViewViewCode: UIView {
     stackView.translatesAutoresizingMaskIntoConstraints = false
     stackView.axis = .vertical
     stackView.distribution = .fill
-    let marginEdge: CGFloat = 16
-    stackView.isLayoutMarginsRelativeArrangement = true
-    stackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: marginEdge,
-                                                                 leading: marginEdge,
-                                                                 bottom: marginEdge,
-                                                                 trailing: marginEdge)
     return stackView
+  }()
+
+  private var titleSubtitleView: UIView = {
+    let view = UIView(frame: .zero)
+    view.translatesAutoresizingMaskIntoConstraints = false
+    return view
   }()
 
   private lazy var titleSubtitle: TitleSubtitleView = {
@@ -67,11 +59,14 @@ class ReminderListViewViewCode: UIView {
   }()
 
   private lazy var reminderTableView: UITableView = {
-    let tableView = UITableView()
+    let tableView = UITableView(frame: .zero)
     tableView.translatesAutoresizingMaskIntoConstraints = false
     tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.classIdentifier())
     tableView.delegate = self
     tableView.dataSource = self
+    tableView.tableFooterView = UIView()
+    tableView.separatorInsetReference = .fromAutomaticInsets
+    tableView.separatorInset = UIEdgeInsets(top: 0, left: -30, bottom: 0, right: 0)
     return tableView
   }()
 
@@ -85,9 +80,11 @@ class ReminderListViewViewCode: UIView {
   private var viewModel: ReminderListViewViewCodeViewModel
 
   private func configureSubviews() {
-//    translatesAutoresizingMaskIntoConstraints = false
+    translatesAutoresizingMaskIntoConstraints = false
+    titleSubtitleView.addSubview(titleSubtitle)
+
     addSubview(stackView)
-    stackView.addArrangedSubview(titleSubtitle)
+    stackView.addArrangedSubview(titleSubtitleView)
     stackView.addArrangedSubview(dividerView)
     stackView.addArrangedSubview(reminderTableView)
     stackView.addArrangedSubview(buttonView)
@@ -100,11 +97,13 @@ class ReminderListViewViewCode: UIView {
       stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
       stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
 
-      titleSubtitle.heightAnchor.constraint(equalToConstant: 56),
+      titleSubtitle.topAnchor.constraint(equalTo: titleSubtitleView.topAnchor, constant: 16),
+      titleSubtitle.leadingAnchor.constraint(equalTo: titleSubtitleView.leadingAnchor, constant: 16),
+      titleSubtitle.trailingAnchor.constraint(equalTo: titleSubtitleView.trailingAnchor, constant: -16),
+      titleSubtitle.bottomAnchor.constraint(equalTo: titleSubtitleView.bottomAnchor, constant: -16),
 
       reminderTableView.widthAnchor.constraint(equalTo: stackView.widthAnchor),
-      
-      buttonView.heightAnchor.constraint(equalToConstant: 44),
+      reminderTableView.heightAnchor.constraint(equalToConstant: 200),
     ])
   }
 }
@@ -113,7 +112,6 @@ class ReminderListViewViewCode: UIView {
 
 extension ReminderListViewViewCode: UITableViewDelegate {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//    viewModel.reminders.count
     viewModel.remindersViewModel.count
   }
 }

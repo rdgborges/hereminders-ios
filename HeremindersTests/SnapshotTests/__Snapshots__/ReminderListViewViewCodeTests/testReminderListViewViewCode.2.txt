@@ -1,34 +1,36 @@
-<Hereminders.ReminderListViewViewCode; frame = (0 0; 0 0); autoresize = W+H; layer = <CALayer>>
-   | <UIStackView; frame = (0 0; 0 0); layer = <CALayer>>
-   |    | <Hereminders.TitleSubtitleView; frame = (16 63; 0 36); layer = <CALayer>>
-   |    |    | <UIStackView; frame = (0 0; 0 36); layer = <CALayer>>
-   |    |    |    | <UILabel; frame = (0 0; 0 18); text = 'Nome do endereço'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
-   |    |    |    |    | <_UILabelContentLayer> (layer)
-   |    |    |    | <UILabel; frame = (0 18; 0 18); text = 'Rua Bela Cinta dos Anjois...'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
-   |    | <Hereminders.DividerView; frame = (16 99; 0 0); layer = <CALayer>>
-   |    | <UITableView; frame = (16 99; 0 0); clipsToBounds = YES; gestureRecognizers = <NSArray>; layer = <CALayer>; contentOffset: {0, 0}; contentSize: {0, 132}; adjustedContentInset: {0, 0, 0, 0}; dataSource: <Hereminders.ReminderListViewViewCode; frame = (0 0; 0 0); autoresize = W+H; layer = <CALayer>>>
-   |    |    | <UITableViewCell; frame = (0 88; 0 44); text = 'Deslgar as luzes'; autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UISystemBackgroundView; frame = (0 0; 0 44); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
-   |    |    |    |    | <UIView; frame = (0 0; 0 44); clipsToBounds = YES; layer = <CALayer>>
-   |    |    |    | <UITableViewCellContentView; frame = (0 0; 0 44); gestureRecognizers = <NSArray>; layer = <CALayer>>
-   |    |    |    |    | <UITableViewLabel; frame = (-16 0; 32 44); text = 'Deslgar as luzes'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (0 43.6667; 16 0.333333); layer = <CALayer>>
-   |    |    | <UITableViewCell; frame = (0 44; 0 44); text = 'Tirar roupas do varal'; autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UISystemBackgroundView; frame = (0 0; 0 44); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
-   |    |    |    |    | <UIView; frame = (0 0; 0 44); clipsToBounds = YES; layer = <CALayer>>
-   |    |    |    | <UITableViewCellContentView; frame = (0 0; 0 44); gestureRecognizers = <NSArray>; layer = <CALayer>>
-   |    |    |    |    | <UITableViewLabel; frame = (-16 0; 32 44); text = 'Tirar roupas do varal'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (0 43.6667; 16 0.333333); layer = <CALayer>>
-   |    |    | <UITableViewCell; frame = (0 0; 0 44); text = 'Jogar água na planta'; autoresize = W; layer = <CALayer>>
-   |    |    |    | <_UISystemBackgroundView; frame = (0 0; 0 44); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
-   |    |    |    |    | <UIView; frame = (0 0; 0 44); clipsToBounds = YES; layer = <CALayer>>
-   |    |    |    | <UITableViewCellContentView; frame = (0 0; 0 44); gestureRecognizers = <NSArray>; layer = <CALayer>>
-   |    |    |    |    | <UITableViewLabel; frame = (-16 0; 32 44); text = 'Jogar água na planta'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
-   |    |    |    | <_UITableViewCellSeparatorView; frame = (0 43.6667; 16 0.333333); layer = <CALayer>>
-   |    |    | <_UIScrollViewScrollIndicator; frame = (-6 -39; 3 36); alpha = 0; autoresize = LM; layer = <CALayer>>
-   |    |    |    | <UIView; frame = (0 0; 3 36); layer = <CALayer>>
-   |    |    | <_UIScrollViewScrollIndicator; frame = (-39 -6; 36 3); alpha = 0; autoresize = TM; layer = <CALayer>>
+<Hereminders.ReminderListViewViewCode; frame = (0 0; 248.667 302); layer = <CALayer>>
+   | <UIStackView; frame = (0 0; 248.667 302); layer = <CALayer>>
+   |    | <UIView; frame = (0 0; 248.667 68); layer = <CALayer>>
+   |    |    | <Hereminders.TitleSubtitleView; frame = (16 16; 216.667 36); layer = <CALayer>>
+   |    |    |    | <UIStackView; frame = (0 0; 216.667 36); layer = <CALayer>>
+   |    |    |    |    | <UILabel; frame = (0 0; 216.667 18); text = 'Nome do endereço'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    |    |    | <_UILabelContentLayer> (layer)
+   |    |    |    |    | <UILabel; frame = (0 18; 216.667 18); text = 'Rua Bela Cinta dos Anjois...'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    | <Hereminders.DividerView; frame = (0 68; 248.667 1); layer = <CALayer>>
+   |    | <UITableView; frame = (0 69; 248.667 200); clipsToBounds = YES; gestureRecognizers = <NSArray>; layer = <CALayer>; contentOffset: {0, 0}; contentSize: {248.66666666666666, 132}; adjustedContentInset: {0, 0, 0, 0}; dataSource: <Hereminders.ReminderListViewViewCode; frame = (0 0; 248.667 302); layer = <CALayer>>>
+   |    |    | <UITableViewCell; frame = (0 88; 248.667 44); text = 'Deslgar as luzes'; autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UISystemBackgroundView; frame = (0 0; 248.667 44); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
+   |    |    |    |    | <UIView; frame = (0 0; 248.667 44); clipsToBounds = YES; layer = <CALayer>>
+   |    |    |    | <UITableViewCellContentView; frame = (0 0; 248.667 44); gestureRecognizers = <NSArray>; layer = <CALayer>>
+   |    |    |    |    | <UITableViewLabel; frame = (16 0; 216.667 44); text = 'Deslgar as luzes'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (-14 43.6667; 262.667 0.333333); layer = <CALayer>>
+   |    |    | <UITableViewCell; frame = (0 44; 248.667 44); text = 'Tirar roupas do varal'; autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UISystemBackgroundView; frame = (0 0; 248.667 44); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
+   |    |    |    |    | <UIView; frame = (0 0; 248.667 44); clipsToBounds = YES; layer = <CALayer>>
+   |    |    |    | <UITableViewCellContentView; frame = (0 0; 248.667 44); gestureRecognizers = <NSArray>; layer = <CALayer>>
+   |    |    |    |    | <UITableViewLabel; frame = (16 0; 216.667 44); text = 'Tirar roupas do varal'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (-14 43.6667; 262.667 0.333333); layer = <CALayer>>
+   |    |    | <UITableViewCell; frame = (0 0; 248.667 44); text = 'Jogar água na planta'; autoresize = W; layer = <CALayer>>
+   |    |    |    | <_UISystemBackgroundView; frame = (0 0; 248.667 44); layer = <CALayer>; configuration = <UIBackgroundConfiguration; Base Style = List Plain Cell; backgroundColor = <UIDynamicSystemColor; name = tableCellPlainBackgroundColor>>>
+   |    |    |    |    | <UIView; frame = (0 0; 248.667 44); clipsToBounds = YES; layer = <CALayer>>
+   |    |    |    | <UITableViewCellContentView; frame = (0 0; 248.667 44); gestureRecognizers = <NSArray>; layer = <CALayer>>
+   |    |    |    |    | <UITableViewLabel; frame = (16 0; 216.667 44); text = 'Jogar água na planta'; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    |    | <_UITableViewCellSeparatorView; frame = (-14 43.6667; 262.667 0.333333); layer = <CALayer>>
+   |    |    | <UIView; frame = (0 132; 248.667 0); layer = <CALayer>>
+   |    |    | <_UIScrollViewScrollIndicator; frame = (-42 194; 36 3); alpha = 0; autoresize = TM; layer = <CALayer>>
    |    |    |    | <UIView; frame = (0 0; 36 3); layer = <CALayer>>
-   |    | <Hereminders.ButtonView; frame = (16 -49; 0 33); layer = <CALayer>>
-   |    |    | <UIButton; frame = (0 0; 0 33); opaque = NO; layer = <CALayer>>
-   |    |    |    | <UIButtonLabel; frame = (0 6; 0 21); text = 'Add Hereminder'; opaque = NO; userInteractionEnabled = NO; layer = <_UILabelLayer>>
+   |    |    | <_UIScrollViewScrollIndicator; frame = (242.667 -39; 3 36); alpha = 0; autoresize = LM; layer = <CALayer>>
+   |    |    |    | <UIView; frame = (0 0; 3 36); layer = <CALayer>>
+   |    | <Hereminders.ButtonView; frame = (0 269; 248.667 33); layer = <CALayer>>
+   |    |    | <UIButton; frame = (0 0; 248.667 33); opaque = NO; layer = <CALayer>>
+   |    |    |    | <UIButtonLabel; frame = (59 6; 131 21); text = 'Add Hereminder'; opaque = NO; userInteractionEnabled = NO; layer = <_UILabelLayer>>
