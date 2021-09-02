@@ -18,7 +18,7 @@ class RadiusTableViewCellSnapshotTest: XCTestCase {
         
         radiusTableViewCell.configure()
         
-        assertSnapshot(matching: radiusTableViewCell , as: Snapshotting.image(size: CGSize(width: 100, height: 100)), record: true)
+        assertSnapshot(matching: radiusTableViewCell , as: Snapshotting.image(size: CGSize(width: 100, height: 100)))
     }
 
 }
