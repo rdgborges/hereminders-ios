@@ -44,6 +44,14 @@ internal struct ColorAsset {
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Asset {
+  internal enum ContributorsImages {
+    internal static let alexandreCardoso = ImageAsset(name: "alexandre-cardoso")
+    internal static let dairanTemoteo = ImageAsset(name: "dairan-temoteo ")
+    internal static let diegoLlopis = ImageAsset(name: "diego-llopis ")
+    internal static let gabrielaSillis = ImageAsset(name: "gabriela-sillis")
+    internal static let rodrigoBorges = ImageAsset(name: "rodrigo-borges")
+    internal static let saraFelix = ImageAsset(name: "sara-felix")
+  }
   internal static let avatar = ImageAsset(name: "avatar")
   internal static let iconCross = ImageAsset(name: "icon_cross")
   internal static let iconSettings = ImageAsset(name: "icon_settings")
@@ -54,6 +62,12 @@ internal enum Asset {
   internal static let allColors: [ColorAsset] = [
   ]
   internal static let allImages: [ImageAsset] = [
+    ContributorsImages.alexandreCardoso,
+    ContributorsImages.dairanTemoteo,
+    ContributorsImages.diegoLlopis,
+    ContributorsImages.gabrielaSillis,
+    ContributorsImages.rodrigoBorges,
+    ContributorsImages.saraFelix,
     avatar,
     iconCross,
     iconSettings,
