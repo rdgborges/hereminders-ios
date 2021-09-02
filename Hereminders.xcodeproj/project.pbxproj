@@ -10,6 +10,8 @@
 		1319E06D26D4349400AA64CE /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1319E06C26D4349400AA64CE /* DividerView.swift */; };
 		133D727C26C6E1150065ECB5 /* MKPlaceMarkExtensionsUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133D727B26C6E1150065ECB5 /* MKPlaceMarkExtensionsUnitTest.swift */; };
 		1349ADC126C5411100981469 /* UnitTestStructPlaceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349ADC026C5411100981469 /* UnitTestStructPlaceResult.swift */; };
+		1365B8CB26DEBC7400D4BD9A /* RadiusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1365B8CA26DEBC7400D4BD9A /* RadiusTableViewCell.swift */; };
+		1365B8CD26DEC0BF00D4BD9A /* RadiusTableViewCellSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1365B8CC26DEC0BF00D4BD9A /* RadiusTableViewCellSnapshotTest.swift */; };
 		13DB8EFD26D42AF000CB86EA /* DividerViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DB8EFC26D42AF000CB86EA /* DividerViewSnapshotTests.swift */; };
 		494B8DFE8651D81614F0892D /* Pods_HeremindersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D88789351E1BF3D95B871DD /* Pods_HeremindersTests.framework */; };
 		89B2AFC2AD9B6003B627FFD3 /* Pods_Hereminders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150D92276C2DFA070189FDC0 /* Pods_Hereminders.framework */; };
@@ -179,6 +181,8 @@
 		1319E06C26D4349400AA64CE /* DividerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 		133D727B26C6E1150065ECB5 /* MKPlaceMarkExtensionsUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKPlaceMarkExtensionsUnitTest.swift; sourceTree = "<group>"; };
 		1349ADC026C5411100981469 /* UnitTestStructPlaceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestStructPlaceResult.swift; sourceTree = "<group>"; };
+		1365B8CA26DEBC7400D4BD9A /* RadiusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusTableViewCell.swift; sourceTree = "<group>"; };
+		1365B8CC26DEC0BF00D4BD9A /* RadiusTableViewCellSnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusTableViewCellSnapshotTest.swift; sourceTree = "<group>"; };
 		13DB8EFC26D42AF000CB86EA /* DividerViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividerViewSnapshotTests.swift; sourceTree = "<group>"; };
 		150D92276C2DFA070189FDC0 /* Pods_Hereminders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hereminders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D88789351E1BF3D95B871DD /* Pods_HeremindersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeremindersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -346,6 +350,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1365B8C926DEBC0C00D4BD9A /* RadiusTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1365B8CA26DEBC7400D4BD9A /* RadiusTableViewCell.swift */,
+			);
+			path = RadiusTableViewCell;
+			sourceTree = "<group>";
+		};
 		55035810078F38E85E247FE8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -545,6 +557,7 @@
 		988E0B3026CB1F5A008BBBCF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1365B8C926DEBC0C00D4BD9A /* RadiusTableViewCell */,
 				BC02947226D913F60030F589 /* WelcomeView */,
 				EDAA814B26D44BE900816933 /* ButtonView */,
 				B1C3EB3E26D15AEA00EB214C /* CircularImageView */,
@@ -570,6 +583,7 @@
 				988E0B3426CB2509008BBBCF /* EmptyViewSnapshotTests.swift */,
 				BCC5A10E26D0244300A7F3B4 /* SegmentedControlViewTests.swift */,
 				BCA85B4426CFF54F005D6843 /* TitleSubtitleSnapshotTests.swift */,
+				1365B8CC26DEC0BF00D4BD9A /* RadiusTableViewCellSnapshotTest.swift */,
 			);
 			path = SnapshotTests;
 			sourceTree = "<group>";
@@ -1168,6 +1182,7 @@
 				9804F6EA2066DBB400820153 /* UIViewController+Extensions.swift in Sources */,
 				98D02AC820673F0700E8BC91 /* SegmentedControlTableViewCell.swift in Sources */,
 				EDAA814426D44BBC00816933 /* ButtonView.swift in Sources */,
+				1365B8CB26DEBC7400D4BD9A /* RadiusTableViewCell.swift in Sources */,
 				B16C833D26D82C92006AAF7B /* ContribuitorTableViewCellViewModel.swift in Sources */,
 				989BAB0720F41BC300C82DF7 /* UIColor+Extensions.swift in Sources */,
 				98DCD2C020E82BD500A49897 /* MKPlacemark+Extensions.swift in Sources */,
@@ -1215,6 +1230,7 @@
 				1349ADC126C5411100981469 /* UnitTestStructPlaceResult.swift in Sources */,
 				B19B82A526C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift in Sources */,
 				BC02947A26D922860030F589 /* ContributorTableViewCellTests.swift in Sources */,
+				1365B8CD26DEC0BF00D4BD9A /* RadiusTableViewCellSnapshotTest.swift in Sources */,
 				988E0B3526CB2509008BBBCF /* EmptyViewSnapshotTests.swift in Sources */,
 				BC51A83F26C471B60022780E /* UITableViewCellUnitTests.swift in Sources */,
 				BCA85B4526CFF550005D6843 /* TitleSubtitleSnapshotTests.swift in Sources */,
