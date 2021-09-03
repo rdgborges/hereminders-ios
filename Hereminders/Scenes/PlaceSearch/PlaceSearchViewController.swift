@@ -26,8 +26,11 @@ class PlaceSearchViewController: UIViewController {
 
     weak var delegate: PlaceSearchViewControllerDelegate?
 
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
+	lazy var placeSearchView: PlaceSearchView = {
+		let screen = PlaceSearchView()
+		screen.configureDelegate(delegate: self)
+		return screen
+	}()
 
     private lazy var searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
@@ -47,6 +50,10 @@ class PlaceSearchViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+	
+	override func loadView() {
+		self.view = placeSearchView
+	}
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,7 +73,6 @@ class PlaceSearchViewController: UIViewController {
     func configureView() {
 
         configureNavigationBar()
-        configureTableView()
     }
 
     func configureNavigationBar() {
@@ -81,12 +87,6 @@ class PlaceSearchViewController: UIViewController {
         self.navigationItem.largeTitleDisplayMode = .always
         self.navigationItem.hidesSearchBarWhenScrolling = false
         self.navigationItem.title = L10n.Placesearch.title
-    }
-
-    func configureTableView() {
-
-        self.tableView.dataSource = self
-        self.tableView.delegate = self
     }
 
     @objc func didTapOnCloseButton() {
@@ -109,9 +109,7 @@ extension PlaceSearchViewController: UISearchResultsUpdating {
 			return
 		}
 
-        self.tableView.isHidden = true
-        self.activityIndicatorView.isHidden = false
-        self.activityIndicatorView.startAnimating()
+		  self.placeSearchView.startAnimating()
 
         self.lastSearch?.cancel()
         self.lastSearch = nil
@@ -138,44 +136,24 @@ extension PlaceSearchViewController: UISearchResultsUpdating {
         }) ?? []
 
         self.places = places
-
-        self.tableView.isHidden = false
-        self.activityIndicatorView.stopAnimating()
-
-        self.tableView.reloadData()
+		  self.placeSearchView.stopAnimating()
     }
 }
 
-extension PlaceSearchViewController: UITableViewDataSource {
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
-        return self.places.count
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
-        var cell = tableView.dequeueReusableCell(withIdentifier: "PlaceSearchCell")
-
-        if cell == nil {
-            cell = UITableViewCell(style: .subtitle, reuseIdentifier: "PlaceSearchCell")
-        }
-
-        let place = self.places[indexPath.row]
-
-        cell?.textLabel?.text = place.name
-        cell?.detailTextLabel?.text = place.address
-
-        return cell!
-    }
-}
-
-extension PlaceSearchViewController: UITableViewDelegate {
-
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-
-        let place = self.places[indexPath.row]
-        self.delegate?.didSelectPlace(place)
-    }
+// MARK: - Extension PlaceSearchViewDelegate
+extension PlaceSearchViewController: PlaceSearchViewDelegate {
+	
+	func numberOfRows() -> Int {
+		return self.places.count
+	}
+	
+	func getPlaces(_ indexPath: IndexPath) -> PlaceResult {
+		return self.places[indexPath.row]
+	}
+	
+	func didSelectRowAt(_ indexPath: IndexPath) {
+		let place = self.places[indexPath.row]
+		self.delegate?.didSelectPlace(place)
+	}
+	
 }
