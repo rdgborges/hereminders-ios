@@ -15,8 +15,10 @@ class ContributorsView: UIView {
 
     // MARK: - UIView
     lazy var contributorsTableView: UITableView = {
-        let tableView = UITableView()
+        let tableView = UITableView(frame: .zero)
         tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.separatorInsetReference = .fromAutomaticInsets
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: -30, bottom: 0, right: 0)
         tableView.backgroundColor = .white
         tableView.register(ContributorTableViewCell.self, forCellReuseIdentifier: ContributorTableViewCell.classIdentifier())
         tableView.tableFooterView = UIView()
