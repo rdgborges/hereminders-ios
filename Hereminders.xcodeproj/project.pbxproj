@@ -128,6 +128,7 @@
 		DE04FA2E26C45B7900D8D498 /* UIColorUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE04FA2D26C45B7900D8D498 /* UIColorUnitTests.swift */; };
 		DE1E78F726C41B1F002A4CBA /* StringUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E78F626C41B1F002A4CBA /* StringUnitTests.swift */; };
 		DE4282D326E112D10014EB5A /* ContributorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4282D226E112D10014EB5A /* ContributorsView.swift */; };
+		DE4282D526E14E070014EB5A /* ContributorsViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4282D426E14E070014EB5A /* ContributorsViewSnapshotTests.swift */; };
 		DEBEC9D626D3E4CA00D92DB5 /* MapLocationViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEC9D526D3E4CA00D92DB5 /* MapLocationViewSnapshotTests.swift */; };
 		DEBEC9DA26D3E50500D92DB5 /* MapLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEC9D826D3E50500D92DB5 /* MapLocationView.swift */; };
 		DEBEC9DB26D3E50500D92DB5 /* MapLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEC9D926D3E50500D92DB5 /* MapLocationViewModel.swift */; };
@@ -312,6 +313,7 @@
 		DE04FA2D26C45B7900D8D498 /* UIColorUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorUnitTests.swift; sourceTree = "<group>"; };
 		DE1E78F626C41B1F002A4CBA /* StringUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUnitTests.swift; sourceTree = "<group>"; };
 		DE4282D226E112D10014EB5A /* ContributorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsView.swift; sourceTree = "<group>"; };
+		DE4282D426E14E070014EB5A /* ContributorsViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsViewSnapshotTests.swift; sourceTree = "<group>"; };
 		DEBEC9D526D3E4CA00D92DB5 /* MapLocationViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationViewSnapshotTests.swift; sourceTree = "<group>"; };
 		DEBEC9D826D3E50500D92DB5 /* MapLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationView.swift; sourceTree = "<group>"; };
 		DEBEC9D926D3E50500D92DB5 /* MapLocationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationViewModel.swift; sourceTree = "<group>"; };
@@ -577,6 +579,7 @@
 				988E0B3426CB2509008BBBCF /* EmptyViewSnapshotTests.swift */,
 				BCC5A10E26D0244300A7F3B4 /* SegmentedControlViewTests.swift */,
 				BCA85B4426CFF54F005D6843 /* TitleSubtitleSnapshotTests.swift */,
+				DE4282D426E14E070014EB5A /* ContributorsViewSnapshotTests.swift */,
 			);
 			path = SnapshotTests;
 			sourceTree = "<group>";
@@ -1254,6 +1257,7 @@
 				1349ADC126C5411100981469 /* UnitTestStructPlaceResult.swift in Sources */,
 				B19B82A526C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift in Sources */,
 				BC02947A26D922860030F589 /* ContributorTableViewCellTests.swift in Sources */,
+				DE4282D526E14E070014EB5A /* ContributorsViewSnapshotTests.swift in Sources */,
 				988E0B3526CB2509008BBBCF /* EmptyViewSnapshotTests.swift in Sources */,
 				BC51A83F26C471B60022780E /* UITableViewCellUnitTests.swift in Sources */,
 				BCA85B4526CFF550005D6843 /* TitleSubtitleSnapshotTests.swift in Sources */,
