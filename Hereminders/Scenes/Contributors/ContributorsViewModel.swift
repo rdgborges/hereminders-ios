@@ -26,7 +26,7 @@ class ContributorsViewModel {
         ContribuitorTableViewCellViewModel(titleSubtitleViewVM: TitleSubtitleViewModel(title: "Rodrigo Borges", subtitle: "Developer Fellow @ Devpass"), circurlarImageViewVM: CircularImageViewModel(with:  Asset.ContributorsImages.rodrigoBorges.image))
 
     private let  sara =
-        ContribuitorTableViewCellViewModel(titleSubtitleViewVM: TitleSubtitleViewModel(title: "Sara Felix", subtitle: "Developer Fellow @ Devpass"), circurlarImageViewVM: CircularImageViewModel(with:  Asset.ContributorsImages.rodrigoBorges.image))
+        ContribuitorTableViewCellViewModel(titleSubtitleViewVM: TitleSubtitleViewModel(title: "Sara Felix", subtitle: "Developer Fellow @ Devpass"), circurlarImageViewVM: CircularImageViewModel(with:  Asset.ContributorsImages.saraFelix.image))
 
     func getArrayContributor() -> [ContribuitorTableViewCellViewModel] {
         let array = [alexandre, dairan, diego, gabriela, rodrigo, sara]
