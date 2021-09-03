@@ -14,8 +14,10 @@ class ContributorsViewSnapshotTests: XCTestCase {
 
     func testContributorsView() {
         let vc = ContributorsViewController()
-
-        assertSnapshot(matching: vc, as: .image(on: .iPhoneSe), record: false)
+        let width = UIScreen.main.bounds.width
+        let height = UIScreen.main.bounds.height
+        let size = CGSize(width: width, height: height)
+        assertSnapshot(matching: vc, as: Snapshotting.image(size: size), record: false)
     }
 
 }
