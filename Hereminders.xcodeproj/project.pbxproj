@@ -28,7 +28,6 @@
 		980B048A20CB58EA00121291 /* MapHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980B048920CB58EA00121291 /* MapHeaderView.xib */; };
 		9811F20F26C3358E005F71E3 /* UIViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9811F20E26C3358E005F71E3 /* UIViewControllerUnitTests.swift */; };
 		983341C820DC53AD006011CF /* PlaceSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983341C620DC53AD006011CF /* PlaceSearchViewController.swift */; };
-		983341C920DC53AD006011CF /* PlaceSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 983341C720DC53AD006011CF /* PlaceSearchViewController.xib */; };
 		983341CB20DC561B006011CF /* PlaceSearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983341CA20DC561B006011CF /* PlaceSearchCoordinator.swift */; };
 		9834C02F2694CB3C0017B6ED /* Matchfile in Resources */ = {isa = PBXBuildFile; fileRef = 98DA12B32119147E0090CA2B /* Matchfile */; };
 		9844E40521080B0B0071B116 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9844E40421080B0B0071B116 /* String+Extensions.swift */; };
@@ -204,7 +203,6 @@
 		980B048920CB58EA00121291 /* MapHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapHeaderView.xib; sourceTree = "<group>"; };
 		9811F20E26C3358E005F71E3 /* UIViewControllerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerUnitTests.swift; sourceTree = "<group>"; };
 		983341C620DC53AD006011CF /* PlaceSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchViewController.swift; sourceTree = "<group>"; };
-		983341C720DC53AD006011CF /* PlaceSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceSearchViewController.xib; sourceTree = "<group>"; };
 		983341CA20DC561B006011CF /* PlaceSearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchCoordinator.swift; sourceTree = "<group>"; };
 		9844E40421080B0B0071B116 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		986B9C7E2140CF5000A1D103 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
@@ -520,7 +518,6 @@
 			isa = PBXGroup;
 			children = (
 				983341C620DC53AD006011CF /* PlaceSearchViewController.swift */,
-				983341C720DC53AD006011CF /* PlaceSearchViewController.xib */,
 			);
 			path = PlaceSearch;
 			sourceTree = "<group>";
@@ -1006,7 +1003,6 @@
 				9877BBEB20F1A824001D2688 /* PlaceListViewController.xib in Resources */,
 				9877BBF220F1ADA1001D2688 /* SettingsViewController.xib in Resources */,
 				98D02AC920673F0700E8BC91 /* SegmentedControlTableViewCell.xib in Resources */,
-				983341C920DC53AD006011CF /* PlaceSearchViewController.xib in Resources */,
 				98F1C9852066E33F0008FF57 /* TextInputTableViewCell.xib in Resources */,
 				98F1C9922066E6EF0008FF57 /* SliderTableViewCell.xib in Resources */,
 				98DA12B62119147E0090CA2B /* Fastfile in Resources */,

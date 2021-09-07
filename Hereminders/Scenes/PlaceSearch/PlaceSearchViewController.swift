@@ -42,10 +42,10 @@ class PlaceSearchViewController: UIViewController {
     private var lastSearch: MKLocalSearch?
     private var places: [PlaceResult] = []
 
-    init(delegate: PlaceSearchViewControllerDelegate) {
-        self.delegate = delegate
-        super.init(nibName: "PlaceSearchViewController", bundle: .main)
-    }
+	init(delegate: PlaceSearchViewControllerDelegate) {
+		self.delegate = delegate
+		super.init(nibName: nil, bundle: nil)
+	}
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
