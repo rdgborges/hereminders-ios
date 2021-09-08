@@ -127,6 +127,9 @@
 		BCC5A11426D0246200A7F3B4 /* SegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC5A11226D0246200A7F3B4 /* SegmentedControlView.swift */; };
 		DE04FA2E26C45B7900D8D498 /* UIColorUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE04FA2D26C45B7900D8D498 /* UIColorUnitTests.swift */; };
 		DE1E78F726C41B1F002A4CBA /* StringUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E78F626C41B1F002A4CBA /* StringUnitTests.swift */; };
+		DE4282D326E112D10014EB5A /* ContributorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4282D226E112D10014EB5A /* ContributorsView.swift */; };
+		DE4282D526E14E070014EB5A /* ContributorsViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4282D426E14E070014EB5A /* ContributorsViewSnapshotTests.swift */; };
+		DE77EF6426E261EA0008D854 /* ContributorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE77EF6326E261EA0008D854 /* ContributorsViewModel.swift */; };
 		DE4282CE26E10EEF0014EB5A /* TextInputCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4282CC26E10EEF0014EB5A /* TextInputCellViewModel.swift */; };
 		DE4282CF26E10EEF0014EB5A /* TextInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4282CD26E10EEF0014EB5A /* TextInputCell.swift */; };
 		DE4282D126E10F0B0014EB5A /* TextInputCellSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4282D026E10F0B0014EB5A /* TextInputCellSnapshotTests.swift */; };
@@ -313,6 +316,9 @@
 		D5E098537E96CE7E62A81278 /* Pods-HeremindersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeremindersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeremindersTests/Pods-HeremindersTests.release.xcconfig"; sourceTree = "<group>"; };
 		DE04FA2D26C45B7900D8D498 /* UIColorUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorUnitTests.swift; sourceTree = "<group>"; };
 		DE1E78F626C41B1F002A4CBA /* StringUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUnitTests.swift; sourceTree = "<group>"; };
+		DE4282D226E112D10014EB5A /* ContributorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsView.swift; sourceTree = "<group>"; };
+		DE4282D426E14E070014EB5A /* ContributorsViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsViewSnapshotTests.swift; sourceTree = "<group>"; };
+		DE77EF6326E261EA0008D854 /* ContributorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsViewModel.swift; sourceTree = "<group>"; };
 		DE4282CC26E10EEF0014EB5A /* TextInputCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputCellViewModel.swift; sourceTree = "<group>"; };
 		DE4282CD26E10EEF0014EB5A /* TextInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputCell.swift; sourceTree = "<group>"; };
 		DE4282D026E10F0B0014EB5A /* TextInputCellSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputCellSnapshotTests.swift; sourceTree = "<group>"; };
@@ -583,6 +589,7 @@
 				988E0B3426CB2509008BBBCF /* EmptyViewSnapshotTests.swift */,
 				BCC5A10E26D0244300A7F3B4 /* SegmentedControlViewTests.swift */,
 				BCA85B4426CFF54F005D6843 /* TitleSubtitleSnapshotTests.swift */,
+				DE4282D426E14E070014EB5A /* ContributorsViewSnapshotTests.swift */,
 			);
 			path = SnapshotTests;
 			sourceTree = "<group>";
@@ -812,6 +819,8 @@
 			isa = PBXGroup;
 			children = (
 				BC01518726DEE9D5005B140F /* ContributorsViewController.swift */,
+				DE4282D226E112D10014EB5A /* ContributorsView.swift */,
+				DE77EF6326E261EA0008D854 /* ContributorsViewModel.swift */,
 			);
 			path = Contributors;
 			sourceTree = "<group>";
@@ -1221,6 +1230,7 @@
 				EDAA814426D44BBC00816933 /* ButtonView.swift in Sources */,
 				B16C833D26D82C92006AAF7B /* ContribuitorTableViewCellViewModel.swift in Sources */,
 				989BAB0720F41BC300C82DF7 /* UIColor+Extensions.swift in Sources */,
+				DE4282D326E112D10014EB5A /* ContributorsView.swift in Sources */,
 				98DCD2C020E82BD500A49897 /* MKPlacemark+Extensions.swift in Sources */,
 				9897154420F3B5FA00F976FE /* Localized.generated.swift in Sources */,
 				BCA85B4A26CFF651005D6843 /* TitleSubtitleViewModel.swift in Sources */,
@@ -1244,6 +1254,7 @@
 				9897154320F3B5FA00F976FE /* ImagesConstants.generated.swift in Sources */,
 				98F1C9892066E4570008FF57 /* UITableViewCell+Extensions.swift in Sources */,
 				9897153820F397F300F976FE /* PlaceDetailsViewController.swift in Sources */,
+				DE77EF6426E261EA0008D854 /* ContributorsViewModel.swift in Sources */,
 				98F1C9842066E33F0008FF57 /* TextInputTableViewCell.swift in Sources */,
 				DEBEC9DB26D3E50500D92DB5 /* MapLocationViewModel.swift in Sources */,
 				BCA85B4926CFF651005D6843 /* TitleSubtitleView.swift in Sources */,
@@ -1269,6 +1280,7 @@
 				1349ADC126C5411100981469 /* UnitTestStructPlaceResult.swift in Sources */,
 				B19B82A526C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift in Sources */,
 				BC02947A26D922860030F589 /* ContributorTableViewCellTests.swift in Sources */,
+				DE4282D526E14E070014EB5A /* ContributorsViewSnapshotTests.swift in Sources */,
 				988E0B3526CB2509008BBBCF /* EmptyViewSnapshotTests.swift in Sources */,
 				BC51A83F26C471B60022780E /* UITableViewCellUnitTests.swift in Sources */,
 				DE4282D126E10F0B0014EB5A /* TextInputCellSnapshotTests.swift in Sources */,
