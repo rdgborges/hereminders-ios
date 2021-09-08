@@ -28,7 +28,6 @@
 		980B048A20CB58EA00121291 /* MapHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980B048920CB58EA00121291 /* MapHeaderView.xib */; };
 		9811F20F26C3358E005F71E3 /* UIViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9811F20E26C3358E005F71E3 /* UIViewControllerUnitTests.swift */; };
 		983341C820DC53AD006011CF /* PlaceSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983341C620DC53AD006011CF /* PlaceSearchViewController.swift */; };
-		983341C920DC53AD006011CF /* PlaceSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 983341C720DC53AD006011CF /* PlaceSearchViewController.xib */; };
 		983341CB20DC561B006011CF /* PlaceSearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983341CA20DC561B006011CF /* PlaceSearchCoordinator.swift */; };
 		9834C02F2694CB3C0017B6ED /* Matchfile in Resources */ = {isa = PBXBuildFile; fileRef = 98DA12B32119147E0090CA2B /* Matchfile */; };
 		9844E40521080B0B0071B116 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9844E40421080B0B0071B116 /* String+Extensions.swift */; };
@@ -122,6 +121,7 @@
 		BCA85B4526CFF550005D6843 /* TitleSubtitleSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA85B4426CFF54F005D6843 /* TitleSubtitleSnapshotTests.swift */; };
 		BCA85B4926CFF651005D6843 /* TitleSubtitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA85B4726CFF651005D6843 /* TitleSubtitleView.swift */; };
 		BCA85B4A26CFF651005D6843 /* TitleSubtitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA85B4826CFF651005D6843 /* TitleSubtitleViewModel.swift */; };
+		BCAB1B5726E02EE0004EF2DA /* PlaceSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB1B5626E02EE0004EF2DA /* PlaceSearchView.swift */; };
 		BCC5A10F26D0244300A7F3B4 /* SegmentedControlViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC5A10E26D0244300A7F3B4 /* SegmentedControlViewTests.swift */; };
 		BCC5A11326D0246200A7F3B4 /* SegmentedControlViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC5A11126D0246200A7F3B4 /* SegmentedControlViewViewModel.swift */; };
 		BCC5A11426D0246200A7F3B4 /* SegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC5A11226D0246200A7F3B4 /* SegmentedControlView.swift */; };
@@ -211,7 +211,6 @@
 		980B048920CB58EA00121291 /* MapHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapHeaderView.xib; sourceTree = "<group>"; };
 		9811F20E26C3358E005F71E3 /* UIViewControllerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerUnitTests.swift; sourceTree = "<group>"; };
 		983341C620DC53AD006011CF /* PlaceSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchViewController.swift; sourceTree = "<group>"; };
-		983341C720DC53AD006011CF /* PlaceSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceSearchViewController.xib; sourceTree = "<group>"; };
 		983341CA20DC561B006011CF /* PlaceSearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchCoordinator.swift; sourceTree = "<group>"; };
 		9844E40421080B0B0071B116 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		986B9C7E2140CF5000A1D103 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
@@ -308,6 +307,7 @@
 		BCA85B4426CFF54F005D6843 /* TitleSubtitleSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TitleSubtitleSnapshotTests.swift; path = HeremindersTests/TitleSubtitleSnapshotTests.swift; sourceTree = SOURCE_ROOT; };
 		BCA85B4726CFF651005D6843 /* TitleSubtitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSubtitleView.swift; sourceTree = "<group>"; };
 		BCA85B4826CFF651005D6843 /* TitleSubtitleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSubtitleViewModel.swift; sourceTree = "<group>"; };
+		BCAB1B5626E02EE0004EF2DA /* PlaceSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchView.swift; sourceTree = "<group>"; };
 		BCC5A10E26D0244300A7F3B4 /* SegmentedControlViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControlViewTests.swift; sourceTree = "<group>"; };
 		BCC5A11126D0246200A7F3B4 /* SegmentedControlViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControlViewViewModel.swift; sourceTree = "<group>"; };
 		BCC5A11226D0246200A7F3B4 /* SegmentedControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControlView.swift; sourceTree = "<group>"; };
@@ -535,7 +535,6 @@
 			isa = PBXGroup;
 			children = (
 				983341C620DC53AD006011CF /* PlaceSearchViewController.swift */,
-				983341C720DC53AD006011CF /* PlaceSearchViewController.xib */,
 			);
 			path = PlaceSearch;
 			sourceTree = "<group>";
@@ -562,6 +561,7 @@
 		988E0B3026CB1F5A008BBBCF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				BCAB1B5526E02EB8004EF2DA /* PlaceSearchView */,
 				DE4282CB26E10EEF0014EB5A /* TextInputTableViewCell */,
 				BC02947226D913F60030F589 /* WelcomeView */,
 				EDAA814B26D44BE900816933 /* ButtonView */,
@@ -852,6 +852,14 @@
 			path = Hereminders/Scenes/TitleSubTitleView;
 			sourceTree = SOURCE_ROOT;
 		};
+		BCAB1B5526E02EB8004EF2DA /* PlaceSearchView */ = {
+			isa = PBXGroup;
+			children = (
+				BCAB1B5626E02EE0004EF2DA /* PlaceSearchView.swift */,
+			);
+			path = PlaceSearchView;
+			sourceTree = "<group>";
+		};
 		BCC5A11026D0246200A7F3B4 /* SegmentedControlView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1035,7 +1043,6 @@
 				9877BBEB20F1A824001D2688 /* PlaceListViewController.xib in Resources */,
 				9877BBF220F1ADA1001D2688 /* SettingsViewController.xib in Resources */,
 				98D02AC920673F0700E8BC91 /* SegmentedControlTableViewCell.xib in Resources */,
-				983341C920DC53AD006011CF /* PlaceSearchViewController.xib in Resources */,
 				98F1C9852066E33F0008FF57 /* TextInputTableViewCell.xib in Resources */,
 				98F1C9922066E6EF0008FF57 /* SliderTableViewCell.xib in Resources */,
 				98DA12B62119147E0090CA2B /* Fastfile in Resources */,
@@ -1227,6 +1234,7 @@
 				9871B41421447DEF0050C651 /* ReminderDataController.swift in Sources */,
 				9804F6EA2066DBB400820153 /* UIViewController+Extensions.swift in Sources */,
 				98D02AC820673F0700E8BC91 /* SegmentedControlTableViewCell.swift in Sources */,
+				BCAB1B5726E02EE0004EF2DA /* PlaceSearchView.swift in Sources */,
 				EDAA814426D44BBC00816933 /* ButtonView.swift in Sources */,
 				B16C833D26D82C92006AAF7B /* ContribuitorTableViewCellViewModel.swift in Sources */,
 				989BAB0720F41BC300C82DF7 /* UIColor+Extensions.swift in Sources */,
