@@ -13,10 +13,12 @@ import SnapshotTesting
 class RadiusTableViewCellSnapshotTest: XCTestCase {
 
     func testRadiusTableViewCell() throws {
-        
+
+        let viewModel = RadiusTableViewCellModel(value: 250)
+
         let radiusTableViewCell = RadiusTableViewCell()
         
-        radiusTableViewCell.configure()
+        radiusTableViewCell.configure(with: viewModel)
         
         assertSnapshot(matching: radiusTableViewCell , as: Snapshotting.image(size: CGSize(width: 100, height: 100)))
     }

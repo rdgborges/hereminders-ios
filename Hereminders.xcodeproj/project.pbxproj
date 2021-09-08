@@ -26,6 +26,7 @@
 		9807EB3220C9ECD100B5F7DA /* HomeViewController+MKMapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9807EB3120C9ECD100B5F7DA /* HomeViewController+MKMapViewDelegate.swift */; };
 		9807EB3420C9EEE800B5F7DA /* ReminderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9807EB3320C9EEE800B5F7DA /* ReminderViewModel.swift */; };
 		9807EB3620C9F23000B5F7DA /* ReminderViewController+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9807EB3520C9F23000B5F7DA /* ReminderViewController+TableViewDataSource.swift */; };
+		9809C70C26E94B0E00345422 /* RadiusTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809C70B26E94B0E00345422 /* RadiusTableViewCellModel.swift */; };
 		980B048820CB58C600121291 /* MapHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980B048720CB58C600121291 /* MapHeaderView.swift */; };
 		980B048A20CB58EA00121291 /* MapHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980B048920CB58EA00121291 /* MapHeaderView.xib */; };
 		9811F20F26C3358E005F71E3 /* UIViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9811F20E26C3358E005F71E3 /* UIViewControllerUnitTests.swift */; };
@@ -203,6 +204,7 @@
 		9807EB3120C9ECD100B5F7DA /* HomeViewController+MKMapViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+MKMapViewDelegate.swift"; sourceTree = "<group>"; };
 		9807EB3320C9EEE800B5F7DA /* ReminderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewModel.swift; sourceTree = "<group>"; };
 		9807EB3520C9F23000B5F7DA /* ReminderViewController+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+TableViewDataSource.swift"; sourceTree = "<group>"; };
+		9809C70B26E94B0E00345422 /* RadiusTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusTableViewCellModel.swift; sourceTree = "<group>"; };
 		980B048720CB58C600121291 /* MapHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapHeaderView.swift; sourceTree = "<group>"; };
 		980B048920CB58EA00121291 /* MapHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapHeaderView.xib; sourceTree = "<group>"; };
 		9811F20E26C3358E005F71E3 /* UIViewControllerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerUnitTests.swift; sourceTree = "<group>"; };
@@ -354,6 +356,7 @@
 			isa = PBXGroup;
 			children = (
 				1365B8CA26DEBC7400D4BD9A /* RadiusTableViewCell.swift */,
+				9809C70B26E94B0E00345422 /* RadiusTableViewCellModel.swift */,
 			);
 			path = RadiusTableViewCell;
 			sourceTree = "<group>";
@@ -1180,6 +1183,7 @@
 				B1C3EB4626D15B1600EB214C /* CircularImageView.swift in Sources */,
 				9871B41421447DEF0050C651 /* ReminderDataController.swift in Sources */,
 				9804F6EA2066DBB400820153 /* UIViewController+Extensions.swift in Sources */,
+				9809C70C26E94B0E00345422 /* RadiusTableViewCellModel.swift in Sources */,
 				98D02AC820673F0700E8BC91 /* SegmentedControlTableViewCell.swift in Sources */,
 				EDAA814426D44BBC00816933 /* ButtonView.swift in Sources */,
 				1365B8CB26DEBC7400D4BD9A /* RadiusTableViewCell.swift in Sources */,

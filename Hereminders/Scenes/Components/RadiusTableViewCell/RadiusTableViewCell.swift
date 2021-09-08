@@ -8,13 +8,12 @@
 
 import UIKit
 
-class RadiusTableViewCell: UIView {
+class RadiusTableViewCell: UITableViewCell {
     
     let radiusSlider: UISlider = {
         let slider = UISlider()
         slider.translatesAutoresizingMaskIntoConstraints = false
         slider.tintColor = UIColor.heremindersBlue
-        slider.thumbTintColor = UIColor.heremindersBlue
         slider.addTarget(self, action: #selector(sliderChanged(sender:)), for: .valueChanged)
         slider.minimumValue = 100
         slider.maximumValue = 500
@@ -24,13 +23,12 @@ class RadiusTableViewCell: UIView {
     let radiusLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "100 m"
         return label
     }()
     
-    init() {
-        
-        super.init(frame: .zero)
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+
         self.configureView()
     }
     
@@ -39,12 +37,13 @@ class RadiusTableViewCell: UIView {
     }
     
     @objc func sliderChanged(sender: UISlider) {
-        let value = sender.value
+        let value = Int(sender.value)
         radiusLabel.text = String(value) + " m"
     }
     
-    func configure() {
-        radiusSlider.value = 250
+    func configure(with viewModel: RadiusTableViewCellModel) {
+
+        radiusSlider.value = Float(viewModel.value)
     }
 }
 
@@ -57,14 +56,16 @@ extension RadiusTableViewCell: ViewProtocol {
     }
     
     func configureConstraints() {
-        radiusSlider.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        radiusSlider.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        radiusSlider.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        
-        radiusLabel.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        radiusLabel.bottomAnchor.constraint(equalTo: radiusSlider.topAnchor).isActive = true
+        NSLayoutConstraint.activate([
+
+            radiusSlider.centerXAnchor.constraint(equalTo: centerXAnchor),
+            radiusSlider.centerYAnchor.constraint(equalTo: centerYAnchor),
+            radiusSlider.widthAnchor.constraint(equalToConstant: 100),
+
+            radiusLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
+            radiusLabel.bottomAnchor.constraint(equalTo: radiusSlider.topAnchor),
+        ])
+
     }
-    
-    
     
 }
