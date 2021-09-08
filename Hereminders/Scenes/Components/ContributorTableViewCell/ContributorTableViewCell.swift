@@ -50,8 +50,8 @@ class ContributorTableViewCell: UITableViewCell {
   }()
 
   private func configureUI() {
-    accessoryType = .disclosureIndicator
     backgroundColor = .white
+    selectionStyle = .none
   }
 
   private func addSubviews() {

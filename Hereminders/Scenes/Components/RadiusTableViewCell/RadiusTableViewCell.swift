@@ -9,8 +9,16 @@
 import UIKit
 
 class RadiusTableViewCell: UITableViewCell {
+
+    let stackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.distribution = .fillProportionally
+        return stackView
+    }()
     
-    let radiusSlider: UISlider = {
+    lazy var radiusSlider: UISlider = {
         let slider = UISlider()
         slider.translatesAutoresizingMaskIntoConstraints = false
         slider.tintColor = UIColor.heremindersBlue
@@ -23,6 +31,7 @@ class RadiusTableViewCell: UITableViewCell {
     let radiusLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .center
         return label
     }()
     
@@ -38,12 +47,12 @@ class RadiusTableViewCell: UITableViewCell {
     
     @objc func sliderChanged(sender: UISlider) {
         let value = Int(sender.value)
-        radiusLabel.text = String(value) + " m"
+        radiusLabel.text = String(value) + "m"
     }
     
     func configure(with viewModel: RadiusTableViewCellModel) {
-
         radiusSlider.value = Float(viewModel.value)
+        radiusLabel.text = String(viewModel.value) + "m"
     }
 }
 
@@ -51,21 +60,20 @@ extension RadiusTableViewCell: ViewProtocol {
     
     func configureSubviews() {
         self.backgroundColor = .white
-        self.addSubview(radiusSlider)
-        self.addSubview(radiusLabel)
+        self.selectionStyle = .none
+
+        self.contentView.addSubview(self.stackView)
+        self.stackView.addArrangedSubview(radiusLabel)
+        self.stackView.addArrangedSubview(radiusSlider)
     }
     
     func configureConstraints() {
         NSLayoutConstraint.activate([
 
-            radiusSlider.centerXAnchor.constraint(equalTo: centerXAnchor),
-            radiusSlider.centerYAnchor.constraint(equalTo: centerYAnchor),
-            radiusSlider.widthAnchor.constraint(equalToConstant: 100),
-
-            radiusLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
-            radiusLabel.bottomAnchor.constraint(equalTo: radiusSlider.topAnchor),
+            stackView.topAnchor.constraint(equalTo: topAnchor),
+            stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            stackView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
-
     }
-    
 }
