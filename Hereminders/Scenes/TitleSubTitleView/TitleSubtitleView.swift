@@ -44,7 +44,6 @@ final class TitleSubtitleView: UIView {
 	override init(frame: CGRect = .zero) {
 		super.init(frame: frame)
 		
-		backgroundColor = .white
 		configureView()
 	}
 	
