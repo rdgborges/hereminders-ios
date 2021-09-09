@@ -24,6 +24,10 @@
 		9807EB3220C9ECD100B5F7DA /* HomeViewController+MKMapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9807EB3120C9ECD100B5F7DA /* HomeViewController+MKMapViewDelegate.swift */; };
 		9807EB3420C9EEE800B5F7DA /* ReminderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9807EB3320C9EEE800B5F7DA /* ReminderViewModel.swift */; };
 		9807EB3620C9F23000B5F7DA /* ReminderViewController+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9807EB3520C9F23000B5F7DA /* ReminderViewController+TableViewDataSource.swift */; };
+		9809C71026E94C7100345422 /* RadiusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809C70E26E94C7100345422 /* RadiusTableViewCell.swift */; };
+		9809C71126E94C7100345422 /* RadiusTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809C70F26E94C7100345422 /* RadiusTableViewCellModel.swift */; };
+		9809C71326E94C7B00345422 /* RadiusTableViewCellSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809C71226E94C7B00345422 /* RadiusTableViewCellSnapshotTest.swift */; };
+		9809C71626EA6BE600345422 /* TitleSubtitleSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809C71526EA6BE600345422 /* TitleSubtitleSnapshotTests.swift */; };
 		980B048820CB58C600121291 /* MapHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980B048720CB58C600121291 /* MapHeaderView.swift */; };
 		980B048A20CB58EA00121291 /* MapHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 980B048920CB58EA00121291 /* MapHeaderView.xib */; };
 		9811F20F26C3358E005F71E3 /* UIViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9811F20E26C3358E005F71E3 /* UIViewControllerUnitTests.swift */; };
@@ -118,7 +122,6 @@
 		BC02947A26D922860030F589 /* ContributorTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC02947926D922860030F589 /* ContributorTableViewCellTests.swift */; };
 		BC51A83F26C471B60022780E /* UITableViewCellUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */; };
 		BC847BA026D5420D00373A49 /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC847B9F26D5420D00373A49 /* ViewProtocol.swift */; };
-		BCA85B4526CFF550005D6843 /* TitleSubtitleSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA85B4426CFF54F005D6843 /* TitleSubtitleSnapshotTests.swift */; };
 		BCA85B4926CFF651005D6843 /* TitleSubtitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA85B4726CFF651005D6843 /* TitleSubtitleView.swift */; };
 		BCA85B4A26CFF651005D6843 /* TitleSubtitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA85B4826CFF651005D6843 /* TitleSubtitleViewModel.swift */; };
 		BCAB1B5726E02EE0004EF2DA /* PlaceSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB1B5626E02EE0004EF2DA /* PlaceSearchView.swift */; };
@@ -127,12 +130,12 @@
 		BCC5A11426D0246200A7F3B4 /* SegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC5A11226D0246200A7F3B4 /* SegmentedControlView.swift */; };
 		DE04FA2E26C45B7900D8D498 /* UIColorUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE04FA2D26C45B7900D8D498 /* UIColorUnitTests.swift */; };
 		DE1E78F726C41B1F002A4CBA /* StringUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E78F626C41B1F002A4CBA /* StringUnitTests.swift */; };
-		DE4282D326E112D10014EB5A /* ContributorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4282D226E112D10014EB5A /* ContributorsView.swift */; };
-		DE4282D526E14E070014EB5A /* ContributorsViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4282D426E14E070014EB5A /* ContributorsViewSnapshotTests.swift */; };
-		DE77EF6426E261EA0008D854 /* ContributorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE77EF6326E261EA0008D854 /* ContributorsViewModel.swift */; };
 		DE4282CE26E10EEF0014EB5A /* TextInputCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4282CC26E10EEF0014EB5A /* TextInputCellViewModel.swift */; };
 		DE4282CF26E10EEF0014EB5A /* TextInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4282CD26E10EEF0014EB5A /* TextInputCell.swift */; };
 		DE4282D126E10F0B0014EB5A /* TextInputCellSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4282D026E10F0B0014EB5A /* TextInputCellSnapshotTests.swift */; };
+		DE4282D326E112D10014EB5A /* ContributorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4282D226E112D10014EB5A /* ContributorsView.swift */; };
+		DE4282D526E14E070014EB5A /* ContributorsViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4282D426E14E070014EB5A /* ContributorsViewSnapshotTests.swift */; };
+		DE77EF6426E261EA0008D854 /* ContributorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE77EF6326E261EA0008D854 /* ContributorsViewModel.swift */; };
 		DEBEC9D626D3E4CA00D92DB5 /* MapLocationViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEC9D526D3E4CA00D92DB5 /* MapLocationViewSnapshotTests.swift */; };
 		DEBEC9DA26D3E50500D92DB5 /* MapLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEC9D826D3E50500D92DB5 /* MapLocationView.swift */; };
 		DEBEC9DB26D3E50500D92DB5 /* MapLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEC9D926D3E50500D92DB5 /* MapLocationViewModel.swift */; };
@@ -207,6 +210,10 @@
 		9807EB3120C9ECD100B5F7DA /* HomeViewController+MKMapViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+MKMapViewDelegate.swift"; sourceTree = "<group>"; };
 		9807EB3320C9EEE800B5F7DA /* ReminderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewModel.swift; sourceTree = "<group>"; };
 		9807EB3520C9F23000B5F7DA /* ReminderViewController+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewController+TableViewDataSource.swift"; sourceTree = "<group>"; };
+		9809C70E26E94C7100345422 /* RadiusTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadiusTableViewCell.swift; sourceTree = "<group>"; };
+		9809C70F26E94C7100345422 /* RadiusTableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadiusTableViewCellModel.swift; sourceTree = "<group>"; };
+		9809C71226E94C7B00345422 /* RadiusTableViewCellSnapshotTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadiusTableViewCellSnapshotTest.swift; sourceTree = "<group>"; };
+		9809C71526EA6BE600345422 /* TitleSubtitleSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSubtitleSnapshotTests.swift; sourceTree = "<group>"; };
 		980B048720CB58C600121291 /* MapHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapHeaderView.swift; sourceTree = "<group>"; };
 		980B048920CB58EA00121291 /* MapHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapHeaderView.xib; sourceTree = "<group>"; };
 		9811F20E26C3358E005F71E3 /* UIViewControllerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerUnitTests.swift; sourceTree = "<group>"; };
@@ -304,7 +311,6 @@
 		BC02947926D922860030F589 /* ContributorTableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContributorTableViewCellTests.swift; sourceTree = "<group>"; };
 		BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellUnitTests.swift; sourceTree = "<group>"; };
 		BC847B9F26D5420D00373A49 /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
-		BCA85B4426CFF54F005D6843 /* TitleSubtitleSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TitleSubtitleSnapshotTests.swift; path = HeremindersTests/TitleSubtitleSnapshotTests.swift; sourceTree = SOURCE_ROOT; };
 		BCA85B4726CFF651005D6843 /* TitleSubtitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSubtitleView.swift; sourceTree = "<group>"; };
 		BCA85B4826CFF651005D6843 /* TitleSubtitleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSubtitleViewModel.swift; sourceTree = "<group>"; };
 		BCAB1B5626E02EE0004EF2DA /* PlaceSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchView.swift; sourceTree = "<group>"; };
@@ -316,12 +322,12 @@
 		D5E098537E96CE7E62A81278 /* Pods-HeremindersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeremindersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeremindersTests/Pods-HeremindersTests.release.xcconfig"; sourceTree = "<group>"; };
 		DE04FA2D26C45B7900D8D498 /* UIColorUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorUnitTests.swift; sourceTree = "<group>"; };
 		DE1E78F626C41B1F002A4CBA /* StringUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUnitTests.swift; sourceTree = "<group>"; };
-		DE4282D226E112D10014EB5A /* ContributorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsView.swift; sourceTree = "<group>"; };
-		DE4282D426E14E070014EB5A /* ContributorsViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsViewSnapshotTests.swift; sourceTree = "<group>"; };
-		DE77EF6326E261EA0008D854 /* ContributorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsViewModel.swift; sourceTree = "<group>"; };
 		DE4282CC26E10EEF0014EB5A /* TextInputCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputCellViewModel.swift; sourceTree = "<group>"; };
 		DE4282CD26E10EEF0014EB5A /* TextInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputCell.swift; sourceTree = "<group>"; };
 		DE4282D026E10F0B0014EB5A /* TextInputCellSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputCellSnapshotTests.swift; sourceTree = "<group>"; };
+		DE4282D226E112D10014EB5A /* ContributorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsView.swift; sourceTree = "<group>"; };
+		DE4282D426E14E070014EB5A /* ContributorsViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsViewSnapshotTests.swift; sourceTree = "<group>"; };
+		DE77EF6326E261EA0008D854 /* ContributorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsViewModel.swift; sourceTree = "<group>"; };
 		DEBEC9D526D3E4CA00D92DB5 /* MapLocationViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationViewSnapshotTests.swift; sourceTree = "<group>"; };
 		DEBEC9D826D3E50500D92DB5 /* MapLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationView.swift; sourceTree = "<group>"; };
 		DEBEC9D926D3E50500D92DB5 /* MapLocationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationViewModel.swift; sourceTree = "<group>"; };
@@ -428,16 +434,8 @@
 		9804F6C32066D79300820153 /* HeremindersTests */ = {
 			isa = PBXGroup;
 			children = (
+				9809C71426EA6B3800345422 /* UnitTests */,
 				988E0B3326CB24EF008BBBCF /* SnapshotTests */,
-				ED1D081F26C5BD74001CA0EE /* AnnotationUnitTest.swift */,
-				B1F276EA26C40E0900996346 /* MKCoordinateSpanUnitTests.swift */,
-				133D727B26C6E1150065ECB5 /* MKPlaceMarkExtensionsUnitTest.swift */,
-				B19B82A426C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift */,
-				DE1E78F626C41B1F002A4CBA /* StringUnitTests.swift */,
-				DE04FA2D26C45B7900D8D498 /* UIColorUnitTests.swift */,
-				BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */,
-				9811F20E26C3358E005F71E3 /* UIViewControllerUnitTests.swift */,
-				1349ADC026C5411100981469 /* UnitTestStructPlaceResult.swift */,
 				9804F6C62066D79300820153 /* Info.plist */,
 			);
 			path = HeremindersTests;
@@ -522,6 +520,31 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		9809C70D26E94C7100345422 /* RadiusTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9809C70E26E94C7100345422 /* RadiusTableViewCell.swift */,
+				9809C70F26E94C7100345422 /* RadiusTableViewCellModel.swift */,
+			);
+			path = RadiusTableViewCell;
+			sourceTree = "<group>";
+		};
+		9809C71426EA6B3800345422 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED1D081F26C5BD74001CA0EE /* AnnotationUnitTest.swift */,
+				B1F276EA26C40E0900996346 /* MKCoordinateSpanUnitTests.swift */,
+				133D727B26C6E1150065ECB5 /* MKPlaceMarkExtensionsUnitTest.swift */,
+				B19B82A426C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift */,
+				DE1E78F626C41B1F002A4CBA /* StringUnitTests.swift */,
+				DE04FA2D26C45B7900D8D498 /* UIColorUnitTests.swift */,
+				BC51A83E26C471B60022780E /* UITableViewCellUnitTests.swift */,
+				9811F20E26C3358E005F71E3 /* UIViewControllerUnitTests.swift */,
+				1349ADC026C5411100981469 /* UnitTestStructPlaceResult.swift */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
 		980B048520CB571800121291 /* MapHeaderView */ = {
 			isa = PBXGroup;
 			children = (
@@ -561,6 +584,7 @@
 		988E0B3026CB1F5A008BBBCF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				9809C70D26E94C7100345422 /* RadiusTableViewCell */,
 				BCAB1B5526E02EB8004EF2DA /* PlaceSearchView */,
 				DE4282CB26E10EEF0014EB5A /* TextInputTableViewCell */,
 				BC02947226D913F60030F589 /* WelcomeView */,
@@ -579,6 +603,8 @@
 		988E0B3326CB24EF008BBBCF /* SnapshotTests */ = {
 			isa = PBXGroup;
 			children = (
+				9809C71526EA6BE600345422 /* TitleSubtitleSnapshotTests.swift */,
+				9809C71226E94C7B00345422 /* RadiusTableViewCellSnapshotTest.swift */,
 				DE4282D026E10F0B0014EB5A /* TextInputCellSnapshotTests.swift */,
 				BC02947926D922860030F589 /* ContributorTableViewCellTests.swift */,
 				BC02947726D9141D0030F589 /* WelcomeViewSnapshotTests.swift */,
@@ -588,7 +614,6 @@
 				B1C3EB3C26D15AB100EB214C /* CircularImageViewTests.swift */,
 				988E0B3426CB2509008BBBCF /* EmptyViewSnapshotTests.swift */,
 				BCC5A10E26D0244300A7F3B4 /* SegmentedControlViewTests.swift */,
-				BCA85B4426CFF54F005D6843 /* TitleSubtitleSnapshotTests.swift */,
 				DE4282D426E14E070014EB5A /* ContributorsViewSnapshotTests.swift */,
 			);
 			path = SnapshotTests;
@@ -1204,6 +1229,7 @@
 				BCC5A11326D0246200A7F3B4 /* SegmentedControlViewViewModel.swift in Sources */,
 				989902C620FD856800865079 /* PremiumViewController.swift in Sources */,
 				9804F6E72066DAC900820153 /* HomeViewController.swift in Sources */,
+				9809C71026E94C7100345422 /* RadiusTableViewCell.swift in Sources */,
 				9807EB3220C9ECD100B5F7DA /* HomeViewController+MKMapViewDelegate.swift in Sources */,
 				9897153B20F39A1E00F976FE /* PlaceDetailsCoordinator.swift in Sources */,
 				988E0B3226CB1F7B008BBBCF /* EmptyView.swift in Sources */,
@@ -1247,6 +1273,7 @@
 				BC01518A26DEEAF2005B140F /* ContributorsCoordinator.swift in Sources */,
 				DE4282CE26E10EEF0014EB5A /* TextInputCellViewModel.swift in Sources */,
 				9877BBF120F1ADA1001D2688 /* SettingsViewController.swift in Sources */,
+				9809C71126E94C7100345422 /* RadiusTableViewCellModel.swift in Sources */,
 				988E0B3726CB291D008BBBCF /* EmptyViewModel.swift in Sources */,
 				9844E40521080B0B0071B116 /* String+Extensions.swift in Sources */,
 				98DD30902068373E00AA7E75 /* PlaceAnnotation.swift in Sources */,
@@ -1288,16 +1315,17 @@
 				1349ADC126C5411100981469 /* UnitTestStructPlaceResult.swift in Sources */,
 				B19B82A526C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift in Sources */,
 				BC02947A26D922860030F589 /* ContributorTableViewCellTests.swift in Sources */,
+				9809C71326E94C7B00345422 /* RadiusTableViewCellSnapshotTest.swift in Sources */,
 				DE4282D526E14E070014EB5A /* ContributorsViewSnapshotTests.swift in Sources */,
 				988E0B3526CB2509008BBBCF /* EmptyViewSnapshotTests.swift in Sources */,
 				BC51A83F26C471B60022780E /* UITableViewCellUnitTests.swift in Sources */,
 				DE4282D126E10F0B0014EB5A /* TextInputCellSnapshotTests.swift in Sources */,
-				BCA85B4526CFF550005D6843 /* TitleSubtitleSnapshotTests.swift in Sources */,
 				B1F276EB26C40E0900996346 /* MKCoordinateSpanUnitTests.swift in Sources */,
 				BCC5A10F26D0244300A7F3B4 /* SegmentedControlViewTests.swift in Sources */,
 				DE1E78F726C41B1F002A4CBA /* StringUnitTests.swift in Sources */,
 				9811F20F26C3358E005F71E3 /* UIViewControllerUnitTests.swift in Sources */,
 				13DB8EFD26D42AF000CB86EA /* DividerViewSnapshotTests.swift in Sources */,
+				9809C71626EA6BE600345422 /* TitleSubtitleSnapshotTests.swift in Sources */,
 				DEBEC9D626D3E4CA00D92DB5 /* MapLocationViewSnapshotTests.swift in Sources */,
 				B1C3EB3D26D15AB100EB214C /* CircularImageViewTests.swift in Sources */,
 			);

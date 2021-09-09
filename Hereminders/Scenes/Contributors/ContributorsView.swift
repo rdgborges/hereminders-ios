@@ -67,7 +67,6 @@ extension ContributorsView: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ContributorTableViewCell.classIdentifier(), for: indexPath) as? ContributorTableViewCell
-        cell?.accessoryType = .disclosureIndicator
         cell?.configure(with: arrayContributors[indexPath.row])
 
         return cell ?? UITableViewCell()

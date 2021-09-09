@@ -20,11 +20,12 @@ class ContributorsViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-        self.contributorsView?.configure(with: viewModel)
+        configureView()
 	}
 
 	private func configureView() {
 		view.backgroundColor = .white
 		title = L10n.Settings.contributors
+        self.contributorsView?.configure(with: viewModel)
 	}
 }
