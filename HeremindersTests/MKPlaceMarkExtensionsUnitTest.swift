@@ -13,7 +13,7 @@ import Contacts
 
 class MKPlaceMarkExtensionsUnitTest: XCTestCase {
 
-    func unitTestPlaceMarkExtensions() throws {
+    func testPlaceMarkExtensions() throws {
         
         let coords = CLLocationCoordinate2D(latitude: 51.5083, longitude: -0.1384)
         

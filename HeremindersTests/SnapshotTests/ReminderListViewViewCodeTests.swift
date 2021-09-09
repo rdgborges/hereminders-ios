@@ -13,11 +13,11 @@ import XCTest
 class ReminderListViewViewCodeTests: XCTestCase {
   func testReminderListViewViewCode() throws {
 
-    let titleSubtitleVM: TitleSubtitleViewModel = TitleSubtitleViewModel(title: "Nome do endereço", subtitle: "Rua Bela Cinta dos Anjois, 1200")
+    let titleSubtitleVM: TitleSubtitleViewModel = TitleSubtitleViewModel(title: "Nome do endereço", subtitle: "Rua Bela Cinta, 1200")
     let reminders: [ReminderItemModel] = [
-      ReminderItemModel(description: "Jogar água na planta", event: true),
-      ReminderItemModel(description: "Tirar roupas do varal", event: false),
-      ReminderItemModel(description: "Deslgar as luzes", event: true),
+      ReminderItemModel(description: "Jogar água na planta", event: 1),
+      ReminderItemModel(description: "Tirar roupas do varal", event: 0),
+      ReminderItemModel(description: "Desligar as luzes", event: 1),
     ]
     let buttonVM = ButtonViewModel(titleButton: L10n.Reminderlist.addReminder)
 
@@ -25,10 +25,11 @@ class ReminderListViewViewCodeTests: XCTestCase {
                                                       remindersViewModel: reminders,
                                                       buttonViewModel: buttonVM)
 
-    let sut  = ReminderListViewViewCode(with: viewModel)
+    let sut = ReminderListViewViewCode()
+
+    sut.configure(with: viewModel)
 
     let snapshopSize = CGSize(width: 375, height: 600)
-    assertSnapshot(matching: sut, as: .image(size: snapshopSize), record: false)
-    assertSnapshot(matching: sut, as: .recursiveDescription, record: false)
+    assertSnapshot(matching: sut, as: .image(size: snapshopSize))
   }
 }

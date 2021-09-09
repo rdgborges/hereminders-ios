@@ -12,7 +12,7 @@ import Foundation
 
 struct ReminderItemModel {
   let description: String
-  let event: Bool
+  let event: Int
 }
 
 // MARK: - ReminderListViewViewCodeViewModel

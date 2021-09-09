@@ -15,8 +15,7 @@ import UIKit
 class ReminderListViewViewCode: UIView {
   // MARK: Lifecycle
 
-  init(with viewModel: ReminderListViewViewCodeViewModel) {
-    self.viewModel = viewModel
+  init() {
     super.init(frame: .zero)
 
     backgroundColor = .white
@@ -49,7 +48,6 @@ class ReminderListViewViewCode: UIView {
   private lazy var titleSubtitle: TitleSubtitleView = {
     let label = TitleSubtitleView()
     label.translatesAutoresizingMaskIntoConstraints = false
-    label.configure(with: viewModel.titleSubtitleViewModel)
     return label
   }()
 
@@ -70,24 +68,31 @@ class ReminderListViewViewCode: UIView {
     return tableView
   }()
 
+    private lazy var buttonViewContainer: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+
   private lazy var buttonView: ButtonView = {
     let button = ButtonView()
     button.translatesAutoresizingMaskIntoConstraints = false
-    button.configure(with: viewModel.buttonViewModel)
     return button
   }()
 
-  private var viewModel: ReminderListViewViewCodeViewModel
+  private var viewModel: ReminderListViewViewCodeViewModel?
 
   private func configureSubviews() {
     translatesAutoresizingMaskIntoConstraints = false
     titleSubtitleView.addSubview(titleSubtitle)
 
+    buttonViewContainer.addSubview(buttonView)
+
     addSubview(stackView)
     stackView.addArrangedSubview(titleSubtitleView)
     stackView.addArrangedSubview(dividerView)
     stackView.addArrangedSubview(reminderTableView)
-    stackView.addArrangedSubview(buttonView)
+    stackView.addArrangedSubview(buttonViewContainer)
   }
 
   private func configureConstraints() {
@@ -102,17 +107,35 @@ class ReminderListViewViewCode: UIView {
       titleSubtitle.trailingAnchor.constraint(equalTo: titleSubtitleView.trailingAnchor, constant: -16),
       titleSubtitle.bottomAnchor.constraint(equalTo: titleSubtitleView.bottomAnchor, constant: -16),
 
+        buttonView.topAnchor.constraint(equalTo: buttonViewContainer.topAnchor, constant: 16),
+        buttonView.leadingAnchor.constraint(equalTo: buttonViewContainer.leadingAnchor, constant: 16),
+        buttonView.trailingAnchor.constraint(equalTo: buttonViewContainer.trailingAnchor, constant: -16),
+        buttonView.bottomAnchor.constraint(equalTo: buttonViewContainer.bottomAnchor, constant: -16),
+
       reminderTableView.widthAnchor.constraint(equalTo: stackView.widthAnchor),
       reminderTableView.heightAnchor.constraint(equalToConstant: 200),
+
+        dividerView.leadingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: 16),
+        dividerView.trailingAnchor.constraint(equalTo: stackView.trailingAnchor, constant: -16),
     ])
   }
+
+    func configure(with viewModel: ReminderListViewViewCodeViewModel) {
+
+        self.viewModel = viewModel
+
+        titleSubtitle.configure(with: viewModel.titleSubtitleViewModel)
+        buttonView.configure(with: viewModel.buttonViewModel)
+
+        reminderTableView.reloadData()
+    }
 }
 
 // MARK: UITableViewDelegate
 
 extension ReminderListViewViewCode: UITableViewDelegate {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    viewModel.remindersViewModel.count
+    viewModel?.remindersViewModel.count ?? 0
   }
 }
 
@@ -120,9 +143,20 @@ extension ReminderListViewViewCode: UITableViewDelegate {
 
 extension ReminderListViewViewCode: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let lembrete = viewModel.remindersViewModel[indexPath.row].description
-    let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.classIdentifier(), for: indexPath)
-    cell.textLabel?.text = lembrete.description
-    return cell
+
+    guard let viewModel = self.viewModel else {
+        return UITableViewCell()
+    }
+
+    let reminder = viewModel.remindersViewModel[indexPath.row]
+    var cell = tableView.dequeueReusableCell(withIdentifier: "ReminderCell")
+
+    if cell == nil {
+        cell = UITableViewCell(style: .value1, reuseIdentifier: "ReminderCell")
+    }
+
+    cell?.textLabel?.text = reminder.description
+    cell?.detailTextLabel?.text = reminder.event == 0 ? L10n.Reminderlist.onEntry : L10n.Reminderlist.onExit
+    return cell!
   }
 }
