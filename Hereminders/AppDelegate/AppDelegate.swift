@@ -49,6 +49,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
     }
 
+    func configureWindow2() {
+
+        let navigationController = UINavigationController()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = navigationController
+
+        self.appCoordinator = AppCoordinator(navigationController: navigationController,
+                                             dataController: self.dataController,
+                                             placeController: self.placeController,
+                                             reminderController: self.reminderController)
+        self.appCoordinator?.start()
+
+        window?.makeKeyAndVisible()
+    }
+
     func applicationWillTerminate(_ application: UIApplication) {
 
         self.dataController.saveContext()
