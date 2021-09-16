@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		053A6D1A26F158670048388C /* PlaceSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A6D1926F158670048388C /* PlaceSearchTableViewCell.swift */; };
+		053A6D1C26F1588D0048388C /* PlaceSearchTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A6D1B26F1588D0048388C /* PlaceSearchTableViewCellViewModel.swift */; };
+		05A4706126F2053500F8CA0F /* PlaceSearchTableViewCellSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4706026F2053500F8CA0F /* PlaceSearchTableViewCellSnapshotTests.swift */; };
 		1319E06D26D4349400AA64CE /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1319E06C26D4349400AA64CE /* DividerView.swift */; };
 		133D727C26C6E1150065ECB5 /* MKPlaceMarkExtensionsUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133D727B26C6E1150065ECB5 /* MKPlaceMarkExtensionsUnitTest.swift */; };
 		1349ADC126C5411100981469 /* UnitTestStructPlaceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349ADC026C5411100981469 /* UnitTestStructPlaceResult.swift */; };
@@ -190,6 +193,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		053A6D1926F158670048388C /* PlaceSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchTableViewCell.swift; sourceTree = "<group>"; };
+		053A6D1B26F1588D0048388C /* PlaceSearchTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		05A4706026F2053500F8CA0F /* PlaceSearchTableViewCellSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchTableViewCellSnapshotTests.swift; sourceTree = "<group>"; };
 		1319E06C26D4349400AA64CE /* DividerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 		133D727B26C6E1150065ECB5 /* MKPlaceMarkExtensionsUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKPlaceMarkExtensionsUnitTest.swift; sourceTree = "<group>"; };
 		1349ADC026C5411100981469 /* UnitTestStructPlaceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestStructPlaceResult.swift; sourceTree = "<group>"; };
@@ -374,6 +380,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		053A6D1826F158420048388C /* PlaceSearchTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				053A6D1926F158670048388C /* PlaceSearchTableViewCell.swift */,
+				053A6D1B26F1588D0048388C /* PlaceSearchTableViewCellViewModel.swift */,
+			);
+			path = PlaceSearchTableViewCell;
+			sourceTree = "<group>";
+		};
 		55035810078F38E85E247FE8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -590,6 +605,7 @@
 		988E0B3026CB1F5A008BBBCF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				053A6D1826F158420048388C /* PlaceSearchTableViewCell */,
 				9809C70D26E94C7100345422 /* RadiusTableViewCell */,
 				BCAB1B5526E02EB8004EF2DA /* PlaceSearchView */,
 				DE4282CB26E10EEF0014EB5A /* TextInputTableViewCell */,
@@ -622,6 +638,7 @@
 				B16C833E26D83F21006AAF7B /* ReminderListViewViewCodeTests.swift */,
 				BCC5A10E26D0244300A7F3B4 /* SegmentedControlViewTests.swift */,
 				DE4282D426E14E070014EB5A /* ContributorsViewSnapshotTests.swift */,
+				05A4706026F2053500F8CA0F /* PlaceSearchTableViewCellSnapshotTests.swift */,
 			);
 			path = SnapshotTests;
 			sourceTree = "<group>";
@@ -1240,6 +1257,7 @@
 				9877BBEA20F1A824001D2688 /* PlaceListViewController.swift in Sources */,
 				98F1C98D2066E5B60008FF57 /* ReminderViewController+TableViewDelegate.swift in Sources */,
 				98F1C9912066E6EF0008FF57 /* SliderTableViewCell.swift in Sources */,
+				053A6D1A26F158670048388C /* PlaceSearchTableViewCell.swift in Sources */,
 				98F1C9872066E4420008FF57 /* UITableView+Extensions.swift in Sources */,
 				980B048820CB58C600121291 /* MapHeaderView.swift in Sources */,
 				98DCD2B220DEB8E700A49897 /* MKCoordinateSpan+Extensions.swift in Sources */,
@@ -1304,6 +1322,7 @@
 				DEBEC9DA26D3E50500D92DB5 /* MapLocationView.swift in Sources */,
 				98F1C97D2066DFBD0008FF57 /* ReminderViewController.swift in Sources */,
 				989BAB0920F41D7800C82DF7 /* Button.swift in Sources */,
+				053A6D1C26F1588D0048388C /* PlaceSearchTableViewCellViewModel.swift in Sources */,
 				98DCD2B920E1C4C900A49897 /* ReminderListView.swift in Sources */,
 				9897154320F3B5FA00F976FE /* ImagesConstants.generated.swift in Sources */,
 				98F1C9892066E4570008FF57 /* UITableViewCell+Extensions.swift in Sources */,
@@ -1334,6 +1353,7 @@
 				1349ADC126C5411100981469 /* UnitTestStructPlaceResult.swift in Sources */,
 				B19B82A526C47EFF008C3980 /* NotificationNameExtensionsUnitTests.swift in Sources */,
 				BC02947A26D922860030F589 /* ContributorTableViewCellTests.swift in Sources */,
+				05A4706126F2053500F8CA0F /* PlaceSearchTableViewCellSnapshotTests.swift in Sources */,
 				9809C71326E94C7B00345422 /* RadiusTableViewCellSnapshotTest.swift in Sources */,
 				DE4282D526E14E070014EB5A /* ContributorsViewSnapshotTests.swift in Sources */,
 				988E0B3526CB2509008BBBCF /* EmptyViewSnapshotTests.swift in Sources */,
