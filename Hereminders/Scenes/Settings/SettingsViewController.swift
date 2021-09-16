@@ -10,7 +10,7 @@ import UIKit
 
 enum SectionName: Int, CaseIterable {
 	case places
-   case about
+    case about
 	case credits
 	
 	func getSectionName() -> String {
@@ -75,6 +75,7 @@ class SettingsViewController: UIViewController {
 
         self.tableView.dataSource = self
         self.tableView.delegate = self
+    
     }
 
     @objc private func didTapOnCloseButton() {
@@ -99,35 +100,35 @@ extension SettingsViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
+        
         var cell = tableView.dequeueReusableCell(withIdentifier: "SettingsCell")
-
         if cell == nil {
             cell = UITableViewCell(style: .default, reuseIdentifier: "SettingsCell")
         }
-		
-		guard let sectionIndex: SectionName = SectionName(rawValue: indexPath.section)
-		else { return UITableViewCell() }
-
+        
+        guard let sectionIndex: SectionName = SectionName(rawValue: indexPath.section)
+        else { return UITableViewCell() }
+        
         switch sectionIndex {
-			case .places:
+        case .places:
             cell?.textLabel?.text = L10n.Settings.managePlaces
-
-			case .about:
+            cell?.accessoryType = .disclosureIndicator
+            
+        case .about:
             cell?.textLabel?.text = L10n.Settings.version(Bundle.versionNumber, Bundle.buildNumber)
-				cell?.isUserInteractionEnabled = false
-			
-			case .credits:
-				if indexPath.row == 0 {
-					cell?.textLabel?.text = L10n.Settings.logoCredit
-					cell?.isUserInteractionEnabled = false
-				} else {
-					cell?.textLabel?.text = L10n.Settings.contributors
-					cell?.accessoryType = .disclosureIndicator
-				}
-
+            cell?.isUserInteractionEnabled = false
+            
+        case .credits:
+            if indexPath.row == 0 {
+                cell?.textLabel?.text = L10n.Settings.logoCredit
+                cell?.isUserInteractionEnabled = false
+            } else {
+                cell?.textLabel?.text = L10n.Settings.contributors
+                cell?.accessoryType = .disclosureIndicator
+            }
+            
         }
-
+        
         return cell!
     }
 
@@ -144,7 +145,7 @@ extension SettingsViewController: UITableViewDelegate {
 
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		tableView.deselectRow(at: indexPath, animated: true)
-		
+        
 		if indexPath.section == SectionName.places.rawValue {
 			
 			self.delegate?.settingsViewControllerWantsToManagePlaces()
