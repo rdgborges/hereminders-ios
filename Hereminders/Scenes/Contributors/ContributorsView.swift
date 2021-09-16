@@ -75,4 +75,8 @@ extension ContributorsView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let url = URL(string: arrayContributors[indexPath.row].titleSubtitleViewVM.urlLinkedin) else { return }
+        UIApplication.shared.open(url, options: [:], completionHandler: { _ in })
+    }
 }
