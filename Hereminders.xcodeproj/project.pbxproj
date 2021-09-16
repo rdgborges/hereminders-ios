@@ -12,6 +12,9 @@
 		1349ADC126C5411100981469 /* UnitTestStructPlaceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1349ADC026C5411100981469 /* UnitTestStructPlaceResult.swift */; };
 		13DB8EFD26D42AF000CB86EA /* DividerViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DB8EFC26D42AF000CB86EA /* DividerViewSnapshotTests.swift */; };
 		494B8DFE8651D81614F0892D /* Pods_HeremindersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D88789351E1BF3D95B871DD /* Pods_HeremindersTests.framework */; };
+		71BDEEA626F266C7009BCB38 /* NotificationsPermissonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BDEEA526F266C7009BCB38 /* NotificationsPermissonViewController.swift */; };
+		71BDEEA826F26DA3009BCB38 /* NotificationsPermissonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BDEEA726F26DA3009BCB38 /* NotificationsPermissonViewModel.swift */; };
+		71BDEEAE26F2C9CD009BCB38 /* NotificationsPermissonVcSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BDEEAD26F2C9CD009BCB38 /* NotificationsPermissonVcSnapshotTests.swift */; };
 		89B2AFC2AD9B6003B627FFD3 /* Pods_Hereminders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150D92276C2DFA070189FDC0 /* Pods_Hereminders.framework */; };
 		9804F6AD2066D79300820153 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9804F6AC2066D79300820153 /* AppDelegate.swift */; };
 		9804F6B52066D79300820153 /* Hereminders.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9804F6B32066D79300820153 /* Hereminders.xcdatamodeld */; };
@@ -195,6 +198,9 @@
 		1349ADC026C5411100981469 /* UnitTestStructPlaceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestStructPlaceResult.swift; sourceTree = "<group>"; };
 		13DB8EFC26D42AF000CB86EA /* DividerViewSnapshotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividerViewSnapshotTests.swift; sourceTree = "<group>"; };
 		150D92276C2DFA070189FDC0 /* Pods_Hereminders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hereminders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71BDEEA526F266C7009BCB38 /* NotificationsPermissonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsPermissonViewController.swift; sourceTree = "<group>"; };
+		71BDEEA726F26DA3009BCB38 /* NotificationsPermissonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsPermissonViewModel.swift; sourceTree = "<group>"; };
+		71BDEEAD26F2C9CD009BCB38 /* NotificationsPermissonVcSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsPermissonVcSnapshotTests.swift; sourceTree = "<group>"; };
 		7D88789351E1BF3D95B871DD /* Pods_HeremindersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeremindersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4F058DE6C0C2862A2BE666 /* Pods-HeremindersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeremindersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeremindersUITests/Pods-HeremindersUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9724BA3B22BE12DF38B2AB8B /* Pods-HeremindersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeremindersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeremindersTests/Pods-HeremindersTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -399,6 +405,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		71BDEEA426F265FF009BCB38 /* NotificationPermisson */ = {
+			isa = PBXGroup;
+			children = (
+				71BDEEA526F266C7009BCB38 /* NotificationsPermissonViewController.swift */,
+				71BDEEA726F26DA3009BCB38 /* NotificationsPermissonViewModel.swift */,
+			);
+			path = NotificationPermisson;
+			sourceTree = "<group>";
+		};
 		9804F6A02066D79300820153 = {
 			isa = PBXGroup;
 			children = (
@@ -492,6 +507,7 @@
 		9804F6E02066D87900820153 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				71BDEEA426F265FF009BCB38 /* NotificationPermisson */,
 				BC01518626DEE9B1005B140F /* Contributors */,
 				988E0B3026CB1F5A008BBBCF /* Components */,
 				9804F6E42066DAA400820153 /* Home */,
@@ -622,6 +638,7 @@
 				B16C833E26D83F21006AAF7B /* ReminderListViewViewCodeTests.swift */,
 				BCC5A10E26D0244300A7F3B4 /* SegmentedControlViewTests.swift */,
 				DE4282D426E14E070014EB5A /* ContributorsViewSnapshotTests.swift */,
+				71BDEEAD26F2C9CD009BCB38 /* NotificationsPermissonVcSnapshotTests.swift */,
 			);
 			path = SnapshotTests;
 			sourceTree = "<group>";
@@ -1242,6 +1259,7 @@
 				98F1C9912066E6EF0008FF57 /* SliderTableViewCell.swift in Sources */,
 				98F1C9872066E4420008FF57 /* UITableView+Extensions.swift in Sources */,
 				980B048820CB58C600121291 /* MapHeaderView.swift in Sources */,
+				71BDEEA826F26DA3009BCB38 /* NotificationsPermissonViewModel.swift in Sources */,
 				98DCD2B220DEB8E700A49897 /* MKCoordinateSpan+Extensions.swift in Sources */,
 				B16C834226D83F41006AAF7B /* ReminderListViewViewCode.swift in Sources */,
 				BCC5A11326D0246200A7F3B4 /* SegmentedControlViewViewModel.swift in Sources */,
@@ -1249,6 +1267,7 @@
 				9804F6E72066DAC900820153 /* HomeViewController.swift in Sources */,
 				9809C71026E94C7100345422 /* RadiusTableViewCell.swift in Sources */,
 				9807EB3220C9ECD100B5F7DA /* HomeViewController+MKMapViewDelegate.swift in Sources */,
+				71BDEEA626F266C7009BCB38 /* NotificationsPermissonViewController.swift in Sources */,
 				9897153B20F39A1E00F976FE /* PlaceDetailsCoordinator.swift in Sources */,
 				988E0B3226CB1F7B008BBBCF /* EmptyView.swift in Sources */,
 				9804F6E32066D90A00820153 /* DataController.swift in Sources */,
@@ -1329,6 +1348,7 @@
 				133D727C26C6E1150065ECB5 /* MKPlaceMarkExtensionsUnitTest.swift in Sources */,
 				BC02947826D9141D0030F589 /* WelcomeViewSnapshotTests.swift in Sources */,
 				ED1D082026C5BD74001CA0EE /* AnnotationUnitTest.swift in Sources */,
+				71BDEEAE26F2C9CD009BCB38 /* NotificationsPermissonVcSnapshotTests.swift in Sources */,
 				EDAA813A26D44B8B00816933 /* ButtonViewSnapshotTests.swift in Sources */,
 				DE04FA2E26C45B7900D8D498 /* UIColorUnitTests.swift in Sources */,
 				1349ADC126C5411100981469 /* UnitTestStructPlaceResult.swift in Sources */,
