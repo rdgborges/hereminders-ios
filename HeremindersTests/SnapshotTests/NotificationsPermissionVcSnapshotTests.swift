@@ -22,6 +22,6 @@ class NotificationsPermissionVcSnapshotTests: XCTestCase {
         let frame = CGRect(x: 0, y: 0, width: 375, height: 200)
         let sut = NotificationsPermissionView(frame: frame )
         sut.configure(with: viewModelMock)
-        assertSnapshot(matching: sut, as: .image , record: true)
+        assertSnapshot(matching: sut, as: .image , record: false)
     }
 }
