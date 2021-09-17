@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-class NotificationsPermissionView: UIView {
-     
+class NotificationsPermissionView: UIView, ViewProtocol {
+
     // MARK: - UIElements
     private let stackView: UIStackView = {
         let stack = UIStackView(frame: .zero)
@@ -64,9 +64,8 @@ class NotificationsPermissionView: UIView {
     
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
-    
-        self.configureSubviews()
-        self.configureConstraints()
+        
+        self.configureView()
     }
     
     required init?(coder: NSCoder) {
@@ -74,19 +73,18 @@ class NotificationsPermissionView: UIView {
     }
     
     // MARK: - Functions
-    private func configureSubviews() {
+    func configureSubviews() {
         addSubview(stackView)
         stackView.addArrangedSubview(iconImageView)
         stackView.addArrangedSubview(titleLabel)
         stackView.addArrangedSubview(subtitleLabel)
         stackView.addArrangedSubview(addNewPlaceButton)
-
+        
         stackView.backgroundColor = .white
     }
     
-    private func configureConstraints() {
+    func configureConstraints() {
         NSLayoutConstraint.activate([
-            
             // StackView
             stackView.topAnchor.constraint(equalTo: topAnchor),
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
@@ -100,7 +98,6 @@ class NotificationsPermissionView: UIView {
             // AddNewPlaceButton
             addNewPlaceButton.widthAnchor.constraint(equalToConstant: 343),
             addNewPlaceButton.heightAnchor.constraint(equalToConstant: 44)
-           
         ])
     }
     
