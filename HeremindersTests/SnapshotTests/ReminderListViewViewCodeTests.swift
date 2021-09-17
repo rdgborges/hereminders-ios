@@ -13,7 +13,7 @@ import XCTest
 class ReminderListViewViewCodeTests: XCTestCase {
   func testReminderListViewViewCode() throws {
 
-    let titleSubtitleVM: TitleSubtitleViewModel = TitleSubtitleViewModel(title: "Nome do endereço", subtitle: "Rua Bela Cinta, 1200")
+    let titleSubtitleVM: TitleSubtitleViewModel = TitleSubtitleViewModel(title: "Nome do endereço", subtitle: "Rua Bela Cinta, 1200", urlLinkedin: "https://www.linkedin.com/in")
     let reminders: [ReminderItemModel] = [
       ReminderItemModel(description: "Jogar água na planta", event: 1),
       ReminderItemModel(description: "Tirar roupas do varal", event: 0),

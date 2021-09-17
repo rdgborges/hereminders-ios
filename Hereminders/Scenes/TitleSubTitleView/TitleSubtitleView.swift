@@ -50,8 +50,7 @@ final class TitleSubtitleView: UIView {
 	required init?(coder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
-	
-	
+		
 	// MARK: - Function
 	func configure(with viewModel: TitleSubtitleViewModel) {
 		titleLabel.text = viewModel.title
@@ -59,8 +58,6 @@ final class TitleSubtitleView: UIView {
 	}
 	
 }
-
-
 // MARK: - Extension ViewProtocol
 extension TitleSubtitleView: ViewProtocol {
 	
@@ -75,7 +72,7 @@ extension TitleSubtitleView: ViewProtocol {
 			stackView.topAnchor.constraint(equalTo: topAnchor),
 			stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
 			stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
-			stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
+			stackView.bottomAnchor.constraint(equalTo: bottomAnchor)
 		])
 	}
 	
