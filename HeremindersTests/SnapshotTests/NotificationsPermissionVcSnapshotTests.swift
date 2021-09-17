@@ -10,15 +10,18 @@ import XCTest
 import SnapshotTesting
 @testable import Hereminders
 
-class NotificationsPermissonVcSnapshotTests: XCTestCase {
+class NotificationsPermissionVcSnapshotTests: XCTestCase {
     
-    let sut = NotificationPermissonViewController()
+    
     let viewModelMock = NotificationsPermissonViewModel(title: "Notificações",
                                                         subtitle: "O Hereminders precisa da permissão à notificações para funcionar. Vamos avisar você sobre os seus lembretes sempre que sair ou entrar em algum local.",
                                                         button:ButtonViewModel.init(titleButton: "Dar permissão à notificações"))
     
+    
     func testNotificationsPermissions() {
+        let frame = CGRect(x: 0, y: 0, width: 375, height: 200)
+        let sut = NotificationsPermissionView(frame: frame )
         sut.configure(with: viewModelMock)
-        assertSnapshot(matching: sut, as: .image(on: .iPhoneX))
+        assertSnapshot(matching: sut, as: .image , record: false)
     }
 }

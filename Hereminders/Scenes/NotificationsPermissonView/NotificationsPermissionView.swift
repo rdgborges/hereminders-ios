@@ -9,9 +9,20 @@
 import Foundation
 import UIKit
 
-class NotificationPermissonViewController: UIViewController {
+class NotificationsPermissionView: UIView {
      
     // MARK: - UIElements
+    private let stackView: UIStackView = {
+        let stack = UIStackView(frame: .zero)
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.axis = .vertical
+        stack.distribution = .fillProportionally
+        stack.spacing = 16
+        stack.alignment = .center
+        stack.backgroundColor = .white
+        
+        return stack
+    }()
     
     private let iconImageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
@@ -51,46 +62,45 @@ class NotificationPermissonViewController: UIViewController {
         return buttonView
     }()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override init(frame: CGRect = .zero) {
+        super.init(frame: frame)
+    
         self.configureSubviews()
         self.configureConstraints()
     }
     
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     // MARK: - Functions
     private func configureSubviews() {
-        view.addSubview(iconImageView)
-        view.addSubview(titleLabel)
-        view.addSubview(subtitleLabel)
-        view.addSubview(addNewPlaceButton)
-        view.backgroundColor = .white
+        addSubview(stackView)
+        stackView.addArrangedSubview(iconImageView)
+        stackView.addArrangedSubview(titleLabel)
+        stackView.addArrangedSubview(subtitleLabel)
+        stackView.addArrangedSubview(addNewPlaceButton)
+
+        stackView.backgroundColor = .white
     }
     
     private func configureConstraints() {
         NSLayoutConstraint.activate([
             
+            // StackView
+            stackView.topAnchor.constraint(equalTo: topAnchor),
+            stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            
             // IconImageView
-            iconImageView.bottomAnchor.constraint(equalTo: titleLabel.topAnchor, constant: -22),
-            iconImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             iconImageView.heightAnchor.constraint(equalToConstant: 50),
             iconImageView.widthAnchor.constraint(equalToConstant: 50),
             
-            // TitleLabel
-            titleLabel.bottomAnchor.constraint(equalTo: subtitleLabel.topAnchor, constant: -7),
-            titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 99),
-            titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -99),
-            
-            // Subtitle_Label
-            subtitleLabel.bottomAnchor.constraint(equalTo: addNewPlaceButton.topAnchor, constant: -29),
-            subtitleLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            subtitleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 46),
-            subtitleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -46),
-            
             // AddNewPlaceButton
-            addNewPlaceButton.heightAnchor.constraint(equalToConstant: 44),
-            addNewPlaceButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-            addNewPlaceButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
+            addNewPlaceButton.widthAnchor.constraint(equalToConstant: 343),
+            addNewPlaceButton.heightAnchor.constraint(equalToConstant: 44)
+           
         ])
     }
     
