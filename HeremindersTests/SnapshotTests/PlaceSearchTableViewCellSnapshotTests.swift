@@ -24,7 +24,7 @@ class PlaceSearchTableViewCellSnapshotTests: XCTestCase {
         let sut = PlaceSearchTableViewCell()
         sut.backgroundColor = .systemBackground
         
-        let titleSubtitleViewModel = TitleSubtitleViewModel(title: "Nome do Local", subtitle: "rua: nome da rua, numero, bairro, cidade, país")
+        let titleSubtitleViewModel = TitleSubtitleViewModel(title: "Nome do Local", subtitle: "rua: nome da rua, numero, bairro, cidade, país", urlLinkedin: "")
         let placeSearchTableViewCellViewModel = PlaceSearchTableViewCellViewModel(titleSubtitleViewVM: titleSubtitleViewModel)
         sut.configure(with: placeSearchTableViewCellViewModel)
         
