@@ -11,4 +11,5 @@ import Foundation
 struct TitleSubtitleViewModel {
 	let title: String
 	let subtitle: String
+    let urlLinkedin: String
 }
