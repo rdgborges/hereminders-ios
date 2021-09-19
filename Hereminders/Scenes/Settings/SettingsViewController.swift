@@ -42,9 +42,7 @@ class SettingsViewController: UIViewController {
     
     let tableView = UITableView.init(frame: CGRect.zero, style: .grouped)
     let tbViewCellIdentifier = "SettingsCell"
-    
-
-    
+        
     init(delegate: SettingsViewControllerDelegate) {
         self.delegate = delegate
         super.init(nibName: nil, bundle: nil)
@@ -56,12 +54,10 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.configureView()
     }
     
     func configureView() {
-        
         self.configureNavigationBar()
         self.configureTableView()
     }
@@ -76,13 +72,7 @@ class SettingsViewController: UIViewController {
     
     func configureTableView() {
         self.view.addSubview(tableView)
-        self.view.backgroundColor = .red
-       
-        tableView.anchor(top: view.topAnchor,
-                         left: view.leftAnchor,
-                         bottom: view.bottomAnchor,
-                         right: view.rightAnchor)
-        
+        tableView.addConstraintsToFillView(self.view)        
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: tbViewCellIdentifier)
@@ -91,7 +81,6 @@ class SettingsViewController: UIViewController {
     }
     
     @objc private func didTapOnCloseButton() {
-        
         self.delegate?.settingsViewControllerWantsToClose()
     }
 }

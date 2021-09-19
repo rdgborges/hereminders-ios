@@ -77,13 +77,7 @@ extension UIView {
         translatesAutoresizingMaskIntoConstraints = false
         widthAnchor.constraint(equalToConstant: width).isActive = true
         heightAnchor.constraint(equalToConstant: height).isActive = true
-    }
-    
-    func addConstraintsToFillView(_ view: UIView) {
-        translatesAutoresizingMaskIntoConstraints = false
-        anchor(top: view.topAnchor, left: view.leftAnchor,
-               bottom: view.bottomAnchor, right: view.rightAnchor)
-    }
+    }    
     
     func addConstraintsToFillView(_ view: UIView,
                                   paddingTop: CGFloat = 0,
