@@ -163,10 +163,8 @@ extension SettingsViewController: UITableViewDataSource {
         headerView.backgroundColor = .systemGroupedBackground
         let sectionTitle = newHeaderViewLabel(section: section)
         headerView.addSubview(sectionTitle)
-
-        sectionTitle.anchor(top: headerView.topAnchor, left: headerView.leftAnchor,
-                           bottom: headerView.bottomAnchor, right: headerView.rightAnchor,
-                           paddingTop: 14.3,paddingLeft: 20,paddingBottom: 6, height: 18)
+        sectionTitle.addConstraintsToFillView(headerView,
+                                              paddingTop: 14.3,paddingLeft: 20,paddingBottom: 6, height: 18)
         return headerView
     }
 
