@@ -148,17 +148,17 @@ extension SettingsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: 58))
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width,height: 0))
         headerView.backgroundColor = .systemGroupedBackground
         let sectionTitle = newHeaderViewLabel(section: section)
         headerView.addSubview(sectionTitle)
         sectionTitle.addConstraintsToFillView(headerView,
-                                              paddingTop: 14.3,paddingLeft: 20,paddingBottom: 6, height: 18)
+                                              paddingTop: 14.3,paddingLeft: 20,paddingBottom: 6)
         return headerView
     }
 
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: 18))
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: 0))
         headerView.backgroundColor = .systemGroupedBackground
         return headerView
     }
