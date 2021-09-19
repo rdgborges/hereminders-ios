@@ -43,13 +43,12 @@ class SettingsViewController: UIViewController {
     let tableView = UITableView.init(frame: CGRect.zero, style: .grouped)
     let tbViewCellIdentifier = "SettingsCell"
     
-    
+
     
     init(delegate: SettingsViewControllerDelegate) {
         self.delegate = delegate
         super.init(nibName: nil, bundle: nil)
     }
-    
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -89,8 +88,6 @@ class SettingsViewController: UIViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: tbViewCellIdentifier)
         tableView.backgroundColor = .systemGroupedBackground
         self.tableView.contentInset = UIEdgeInsets(top: 17.5, left: 0, bottom: 0, right: 0)
-
-
     }
     
     @objc private func didTapOnCloseButton() {
@@ -102,12 +99,21 @@ class SettingsViewController: UIViewController {
 extension SettingsViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        
         return SectionName.allCases.count
     }
     
+    func newHeaderViewLabel(section: Int) -> UILabel {
+        let text = SectionName(rawValue: section)?.getSectionName().uppercased() ?? ""
+        let sectionText = UILabel()
+        sectionText.textAlignment = .left
+        sectionText.textColor = UIColor.gray
+        sectionText.font = UIFont.systemFont(ofSize: 13)
+        sectionText.numberOfLines = 1
+        sectionText.text = text
+        return sectionText
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         if section == SectionName.credits.rawValue {
             return 2
         }
@@ -120,8 +126,6 @@ extension SettingsViewController: UITableViewDataSource {
         if cell == nil {
             cell = UITableViewCell(style: .default, reuseIdentifier: tbViewCellIdentifier)
         }
-        
-        //cell?.backgroundColor = .red
         
         guard let sectionIndex: SectionName = SectionName(rawValue: indexPath.section)
         else { return UITableViewCell() }
@@ -143,7 +147,6 @@ extension SettingsViewController: UITableViewDataSource {
                 cell?.textLabel?.text = L10n.Settings.contributors
                 cell?.accessoryType = .disclosureIndicator
             }
-            
         }
         
         return cell!
@@ -157,31 +160,21 @@ extension SettingsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: 58))
-        //headerView.anchor(height: 38)
         headerView.backgroundColor = .systemGroupedBackground
-        let sectionText = UILabel()
-        //sectionText.frame = CGRect.init(x: 20, y: 0, width: headerView.frame.width, height: headerView.frame.height)
-        sectionText.textAlignment = .left
-        sectionText.textColor = UIColor.gray
-        sectionText.font = UIFont.systemFont(ofSize: 13)
-        sectionText.numberOfLines = 1
-        
-        sectionText.text = SectionName(rawValue: section)?.getSectionName().uppercased() ?? ""
-        headerView.addSubview(sectionText)
-        sectionText.anchor(top: headerView.topAnchor, left: headerView.leftAnchor,bottom: headerView.bottomAnchor, right: headerView.rightAnchor,paddingTop: 14.3,paddingLeft: 20,paddingBottom: 6, height: 18)
+        let sectionTitle = newHeaderViewLabel(section: section)
+        headerView.addSubview(sectionTitle)
 
-        
+        sectionTitle.anchor(top: headerView.topAnchor, left: headerView.leftAnchor,
+                           bottom: headerView.bottomAnchor, right: headerView.rightAnchor,
+                           paddingTop: 14.3,paddingLeft: 20,paddingBottom: 6, height: 18)
         return headerView
     }
-    
 
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: 18))
         headerView.backgroundColor = .systemGroupedBackground
         return headerView
     }
-    
-    
 }
 
 extension SettingsViewController: UITableViewDelegate {
