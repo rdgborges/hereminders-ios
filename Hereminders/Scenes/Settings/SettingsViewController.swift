@@ -9,7 +9,6 @@
 import UIKit
 
 
-
 enum SectionName: Int, CaseIterable {
     case places
     case about
@@ -25,7 +24,6 @@ enum SectionName: Int, CaseIterable {
             return L10n.Settings.credits
         }
     }
-    
 }
 
 protocol SettingsViewControllerDelegate: AnyObject {
@@ -77,7 +75,7 @@ class SettingsViewController: UIViewController {
         tableView.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: tbViewCellIdentifier)
         tableView.backgroundColor = .systemGroupedBackground
-        self.tableView.contentInset = UIEdgeInsets(top: 17.5, left: 0, bottom: 0, right: 0)
+        self.tableView.contentInset = UIEdgeInsets(top: 18, left: 0, bottom: 0, right: 0)
     }
     
     @objc private func didTapOnCloseButton() {
@@ -153,7 +151,7 @@ extension SettingsViewController: UITableViewDataSource {
         let sectionTitle = newHeaderViewLabel(section: section)
         headerView.addSubview(sectionTitle)
         sectionTitle.addConstraintsToFillView(headerView,
-                                              paddingTop: 14.3,paddingLeft: 20,paddingBottom: 6)
+                                              paddingTop: 14.9,paddingLeft: 20,paddingBottom: 7.4)
         return headerView
     }
 

@@ -21,8 +21,7 @@ class SettingsViewSnapshotTests: XCTestCase {
     
     
     
-    func testSettingsView() { //testPlaceSearchTableViewCell (imagem) 
-        
+    func testSettingsView() { // (imagem)
         let sut = SettingsViewController(delegate: self)
         let width = UIScreen.main.bounds.width
         let height = UIScreen.main.bounds.height
@@ -33,12 +32,8 @@ class SettingsViewSnapshotTests: XCTestCase {
 }
 
 extension SettingsViewSnapshotTests: SettingsViewControllerDelegate {
-           
     func settingsViewControllerWantsToBecomePremium() {}
     func settingsViewControllerWantsToManagePlaces() {}
     func settingsViewControllerWantsToClose() {}
     func settingsViewControllerWantsToContributors() {}
-    
-    
-    
 }
