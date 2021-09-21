@@ -80,8 +80,19 @@ class SettingsViewController: UIViewController {
 // MARK: - Extension SettingsViewViewDelegate
 
 extension SettingsViewController: SettingsViewControllerDelegate {
-    func settingsViewControllerWantsToBecomePremium() {}
-    func settingsViewControllerWantsToManagePlaces() {}
-    func settingsViewControllerWantsToClose() {}
-    func settingsViewControllerWantsToContributors() {}
+    func settingsViewControllerWantsToBecomePremium() {
+        
+    }
+    
+    func settingsViewControllerWantsToManagePlaces() {
+        self.delegate?.settingsViewControllerWantsToManagePlaces()
+    }
+    
+    func settingsViewControllerWantsToClose() {
+        
+    }
+    
+    func settingsViewControllerWantsToContributors() {
+        self.delegate?.settingsViewControllerWantsToContributors()
+    }
 }
