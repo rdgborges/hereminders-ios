@@ -17,7 +17,6 @@ struct PlaceResult {
 }
 
 protocol PlaceSearchViewControllerDelegate: AnyObject {
-
     func didSelectPlace(_ place: PlaceResult)
     func didCancel()
 }
@@ -57,7 +56,6 @@ class PlaceSearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         configureView()
     }
 
@@ -71,7 +69,6 @@ class PlaceSearchViewController: UIViewController {
     }
 
     func configureView() {
-
         configureNavigationBar()
     }
 
