@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		052DD4E126FA03850072E4C1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052DD4E026FA03850072E4C1 /* SettingsView.swift */; };
 		053A6D1A26F158670048388C /* PlaceSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A6D1926F158670048388C /* PlaceSearchTableViewCell.swift */; };
 		053A6D1C26F1588D0048388C /* PlaceSearchTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053A6D1B26F1588D0048388C /* PlaceSearchTableViewCellViewModel.swift */; };
 		059A0AEB26F55153003351DB /* SettingsViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A0AEA26F55153003351DB /* SettingsViewSnapshotTests.swift */; };
@@ -195,6 +196,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		052DD4E026FA03850072E4C1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		053A6D1926F158670048388C /* PlaceSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchTableViewCell.swift; sourceTree = "<group>"; };
 		053A6D1B26F1588D0048388C /* PlaceSearchTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		059A0AEA26F55153003351DB /* SettingsViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewSnapshotTests.swift; sourceTree = "<group>"; };
@@ -384,6 +386,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		052DD4DF26FA03690072E4C1 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				052DD4E026FA03850072E4C1 /* SettingsView.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
 		053A6D1826F158420048388C /* PlaceSearchTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -610,6 +620,7 @@
 		988E0B3026CB1F5A008BBBCF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				052DD4DF26FA03690072E4C1 /* SettingsView */,
 				053A6D1826F158420048388C /* PlaceSearchTableViewCell */,
 				9809C70D26E94C7100345422 /* RadiusTableViewCell */,
 				BCAB1B5526E02EB8004EF2DA /* PlaceSearchView */,
@@ -1315,6 +1326,7 @@
 				986B9C7F2140CF5000A1D103 /* Bundle+Extensions.swift in Sources */,
 				BC01518A26DEEAF2005B140F /* ContributorsCoordinator.swift in Sources */,
 				DE4282CE26E10EEF0014EB5A /* TextInputCellViewModel.swift in Sources */,
+				052DD4E126FA03850072E4C1 /* SettingsView.swift in Sources */,
 				9877BBF120F1ADA1001D2688 /* SettingsViewController.swift in Sources */,
 				9809C71126E94C7100345422 /* RadiusTableViewCellModel.swift in Sources */,
 				059A0AED26F62511003351DB /* UIView+Extensions.swift in Sources */,

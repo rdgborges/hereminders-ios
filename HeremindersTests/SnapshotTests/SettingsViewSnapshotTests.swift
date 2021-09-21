@@ -20,20 +20,12 @@ class SettingsViewSnapshotTests: XCTestCase {
     }
     
     
-    
     func testSettingsView() { // (imagem)
-        let sut = SettingsViewController(delegate: self)
+        let sut = SettingsView()
         let width = UIScreen.main.bounds.width
         let height = UIScreen.main.bounds.height
         let size = CGSize(width: width, height: height)
         
         assertSnapshot(matching: sut, as: Snapshotting.image(size: size))
     }
-}
-
-extension SettingsViewSnapshotTests: SettingsViewControllerDelegate {
-    func settingsViewControllerWantsToBecomePremium() {}
-    func settingsViewControllerWantsToManagePlaces() {}
-    func settingsViewControllerWantsToClose() {}
-    func settingsViewControllerWantsToContributors() {}
 }
