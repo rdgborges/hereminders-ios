@@ -15,7 +15,7 @@ class TitleSubtitleSnapshotTests: XCTestCase {
 	func testTitleSubtitleView() {
 		let frame = CGRect(x: 0, y: 0, width: 375, height: 40)
 		let viewModel = TitleSubtitleViewModel(title: "Ronald Robertson",
-															subtitle: "iOS Developer Fellow @Devpass")
+                                               subtitle: "iOS Developer Fellow @Devpass", urlLinkedin: "")
 		let titleSubtitleView = TitleSubtitleView(frame: frame)
 		
 		titleSubtitleView.configure(with: viewModel)
@@ -26,7 +26,7 @@ class TitleSubtitleSnapshotTests: XCTestCase {
 	func testTitleSubtitleViewTooLong() {
 		let frame = CGRect(x: 0, y: 0, width: 375, height: 40)
 		let viewModel = TitleSubtitleViewModel(title: "Amenay Ernestina Las Mercedes Varas Tapia Garcia Negrão",
-															subtitle: "iOS Coordinator Developer - Comunidade de app Devpass")
+															subtitle: "iOS Coordinator Developer - Comunidade de app Devpass", urlLinkedin: "urlLinkedin")
 		let titleSubtitleView = TitleSubtitleView(frame: frame)
 		
 		titleSubtitleView.configure(with: viewModel)

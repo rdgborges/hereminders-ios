@@ -12,8 +12,8 @@ import XCTest
 
 class ContributorTableViewCellTests: XCTestCase {
   func testContributorTableViewCell() throws {
-    let titleViewModel = TitleSubtitleViewModel(title: "Nome do Contribuidor", subtitle: "Nome do cargo da pessoa")
-    let circularViewModel = CircularImageViewModel(with: Image(named: "avatar"))
+    let titleViewModel = TitleSubtitleViewModel(title: "Nome do Contribuidor", subtitle: "Nome do cargo da pessoa", urlLinkedin: "URL da pagina do LinkedIn do Contribuidor")
+    let circularViewModel = CircularImageViewModel(with: UIImage(named: "avatar"))
     let viewModelSut = ContribuitorTableViewCellViewModel(titleSubtitleViewVM: titleViewModel, circurlarImageViewVM: circularViewModel)
 
     let sut = ContributorTableViewCell()
