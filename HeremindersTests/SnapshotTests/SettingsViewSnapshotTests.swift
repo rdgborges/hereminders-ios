@@ -26,6 +26,6 @@ class SettingsViewSnapshotTests: XCTestCase {
         let height = UIScreen.main.bounds.height
         let size = CGSize(width: width, height: height)
         
-        assertSnapshot(matching: sut, as: Snapshotting.image(size: size))
+        assertSnapshot(matching: sut, as: Snapshotting.image(size: size), record: false)
     }
 }
