@@ -65,7 +65,6 @@
 		988E0B3226CB1F7B008BBBCF /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E0B3126CB1F7B008BBBCF /* EmptyView.swift */; };
 		988E0B3526CB2509008BBBCF /* EmptyViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E0B3426CB2509008BBBCF /* EmptyViewSnapshotTests.swift */; };
 		988E0B3726CB291D008BBBCF /* EmptyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E0B3626CB291D008BBBCF /* EmptyViewModel.swift */; };
-		988FEE5526FB827D005FD312 /* NotificationsPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FEE5426FB827D005FD312 /* NotificationsPermissionViewController.swift */; };
 		9890C16F206C494D003C6F8D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9890C16E206C494D003C6F8D /* AppCoordinator.swift */; };
 		9890C171206C4B16003C6F8D /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9890C170206C4B16003C6F8D /* HomeCoordinator.swift */; };
 		9890C173206C4E55003C6F8D /* ReminderCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9890C172206C4E55003C6F8D /* ReminderCoordinator.swift */; };
@@ -263,7 +262,6 @@
 		988E0B3126CB1F7B008BBBCF /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		988E0B3426CB2509008BBBCF /* EmptyViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewSnapshotTests.swift; sourceTree = "<group>"; };
 		988E0B3626CB291D008BBBCF /* EmptyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewModel.swift; sourceTree = "<group>"; };
-		988FEE5426FB827D005FD312 /* NotificationsPermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsPermissionViewController.swift; sourceTree = "<group>"; };
 		9890C16E206C494D003C6F8D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		9890C170206C4B16003C6F8D /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		9890C172206C4E55003C6F8D /* ReminderCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCoordinator.swift; sourceTree = "<group>"; };
@@ -441,7 +439,6 @@
 			children = (
 				71BDEEA526F266C7009BCB38 /* NotificationsPermissionView.swift */,
 				71BDEEA726F26DA3009BCB38 /* NotificationsPermissonViewModel.swift */,
-				988FEE5426FB827D005FD312 /* NotificationsPermissionViewController.swift */,
 			);
 			path = NotificationsPermissonView;
 			sourceTree = "<group>";
@@ -1317,7 +1314,6 @@
 				EDAA814326D44BBC00816933 /* ButtonViewModel.swift in Sources */,
 				98DD30832068203300AA7E75 /* Place.swift in Sources */,
 				9871B417214483460050C651 /* AppDelegate+ThemeConfiguration.swift in Sources */,
-				988FEE5526FB827D005FD312 /* NotificationsPermissionViewController.swift in Sources */,
 				983341C820DC53AD006011CF /* PlaceSearchViewController.swift in Sources */,
 				9871B41221447B0A0050C651 /* PlaceDataController.swift in Sources */,
 				9877BBF420F1B009001D2688 /* SettingsCoordinator.swift in Sources */,

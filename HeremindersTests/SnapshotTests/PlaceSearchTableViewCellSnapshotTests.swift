@@ -29,6 +29,6 @@ class PlaceSearchTableViewCellSnapshotTests: XCTestCase {
         let placeSearchTableViewCellViewModel = PlaceSearchTableViewCellViewModel(titleSubtitleViewVM: titleSubtitleViewModel)
         sut.configure(with: placeSearchTableViewCellViewModel)
         
-        assertSnapshot(matching: sut, as: Snapshotting.image(size: tableViewCellSize))
+        assertSnapshot(matching: sut, as: Snapshotting.image(size: tableViewCellSize), record: false)
     }
 }
